@@ -87,4 +87,18 @@ po17 -- pi17
 po8 .left. pi11
 po10 .down. pi10
 
+'palladium main line
+po25 -- pi28
+po26 -- pi29
+po28 -- pi43
+po29 -- pi36
+po32 -- pi37
+po33 -- pi44
+po34 -- pi39
+po37 -- pi42
+po30 -- pi35
+po39 -- pi33
+po38 -- pi38
+po36 -- pi41
+po35 -- pi40
 @enduml
