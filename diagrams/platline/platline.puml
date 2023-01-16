@@ -70,4 +70,6 @@ skinparam rectangle {
 
 $drawMachines()
 
+po1 -- pi4
+po2 -- pi6
 @enduml
