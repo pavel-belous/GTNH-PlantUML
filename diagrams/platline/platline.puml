@@ -14,16 +14,17 @@ skinparam rectangle {
 ' %false() - dont display ports names
 !$DEBUG = %true()
 
+'-----------Functions--------------------------------------------
 !function $getGTcircuitImage($circuitNo=0)
    !return "<img:../../lib/resources/gregtech/textures/items/gt.integrated_circuit/"+$circuitNo+".png>"
 !endfunction
 
+'-----------Procedures-------------------------------------------
 !procedure $drawNode($circuitNo=0)
     node "$getGTcircuitImage($circuitNo)" as test {
         [ %getenv("WORKDIR") - value]
     }
 !endprocedure
-
 
 !procedure $drawMachines()
     !$fullMachineName = $machineName+$machineNumber
@@ -66,11 +67,9 @@ skinparam rectangle {
 
       }
     !endfor
-
-
 !endprocedure
 
-
+'-----------Draw Diagram Section---------------------------------
 
 $drawMachines()
 
