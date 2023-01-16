@@ -70,7 +70,7 @@ skinparam rectangle {
 
 $drawMachines()
 
-'rhodium main line
+'rhodium
 po1 -- pi4
 po2 -- pi6
 po4 --pi8
@@ -83,11 +83,11 @@ po19 -- pi22
 po20 -- pi24
 po21 -- pi25
 po17 -- pi17
-'rhodium recycle line
+'recycle
 po8 .left. pi11
 po10 .down. pi10
 
-'palladium main line
+'palladium
 po25 -- pi28
 po26 -- pi29
 po28 -- pi43
@@ -101,4 +101,11 @@ po39 -- pi33
 po38 -- pi38
 po36 -- pi41
 po35 -- pi40
+
+'ruthenium
+po44 -- pi48
+po46 -- pi51
+po47 -- pi52
+po50 -- pi53
+po51 -- pi54
 @enduml
