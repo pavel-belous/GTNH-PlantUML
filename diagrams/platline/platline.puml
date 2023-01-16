@@ -43,7 +43,7 @@ skinparam rectangle {
             }
             !foreach $input in $machine.inputs
                 !$inputNumber = $inputNumber + 1
-                !$portInName = %string("pi"+$inputNumber+$fullMachineName)
+                !$portInName = %string("pi"+$inputNumber)
                 !if ($DEBUG)
                     portin "$input.name\n$portInName" as $portInName
                 !else
@@ -54,7 +54,7 @@ skinparam rectangle {
 
             !foreach $output in $machine.outputs
                 !$outputNumber = $outputNumber + 1
-                !$portOutName = %string("po"+$outputNumber+$fullMachineName)
+                !$portOutName = %string("po"+$outputNumber)
                 !if ($DEBUG)
                     portout "$output.name\n$portOutName" as $portOutName
                 !else
