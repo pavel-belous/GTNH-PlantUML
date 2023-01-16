@@ -1,0 +1,926 @@
+[
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Potassium Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "Sulfur Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "Oxygen",
+        "amount": "7000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Potassium Disulfate Dust",
+        "amount": "11D"
+      }
+    ]
+  },
+  {
+    "name": "FluidExtractor",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Potassium Dust",
+        "amount": "11D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Molten Potassium Disulfate",
+        "amount": "1584L"
+      }
+    ]
+  },
+  {
+    "name": "EBF",
+    "tier": "HV",
+    "circuit": 11,
+    "inputs": [
+      {
+        "name": "Platinum Residue Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Molten Potassium Disulfate",
+        "amount": "360L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Leach Residue Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Rhodium Sulfate",
+        "amount": "360L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 3,
+    "inputs": [
+      {
+        "name": "Water",
+        "amount": "36000L"
+      },
+      {
+        "name": "Rhodium Sulfate",
+        "amount": "39600L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Leach Residue Dust",
+        "amount": "4D"
+      },
+      {
+        "name": "Molten Potassium",
+        "amount": "7200L"
+      },
+      {
+        "name": "Rhodium Sulfate Solution",
+        "amount": "39600L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Rhodium Sulfate Solution",
+        "amount": "1000L"
+      },
+      {
+        "name": "Zinc Dust",
+        "amount": "1D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Zinc Sulfate Dust",
+        "amount": "6D"
+      },
+      {
+        "name": "Crude Rhodium Metal Dust",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "Electrolyzer",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Zinc Sulfate Dust",
+        "amount": "6D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Zinc Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Sulfur Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Oxygen",
+        "amount": "4000L"
+      }
+    ]
+  },
+  {
+    "name": "EBF",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Crude Rhodium Metal Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Salt",
+        "amount": "1D"
+      },
+      {
+        "name": "Chlorine",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Rhodium Salt Dust",
+        "amount": "3D"
+      }
+    ]
+  },
+  {
+    "name": "Mixer",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Rhodium Salt Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Water",
+        "amount": "200L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Rhodium Salt Solution",
+        "amount": "200L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Sodium Nitrate Dust",
+        "amount": "5D"
+      },
+      {
+        "name": "Rhodium Salt Solution",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Rhodium Nitrate Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Salt",
+        "amount": "2D"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Sodium Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Nitric Acid",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Sodium Nitrate Dust",
+        "amount": "5D"
+      },
+      {
+        "name": "Hydrogen Gas",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "Sifter",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Rhodium Nitrate Dust",
+        "amount": "1D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Rhodium Filter Cake Dust",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "Mixer",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Rhodium Filter Cake Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Water",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Rhodium Filter Cake Solution",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 2,
+    "inputs": [
+      {
+        "name": "Rhodium Filter Cake Solution",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Reprecipitated Rhodium Dust",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Reprecipitated Rhodium Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Hydrochloric Acid",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Rhodium Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Ammonia",
+        "amount": "1000L"
+      },
+      {
+        "name": "Chlorine",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 2,
+    "inputs": [
+      {
+        "name": "Palladium Enriched Ammonia",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Palladium Salt Dust",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "Sifter",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Palladium Salt Dust",
+        "amount": "1D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Palladium Metallic Powder",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 9,
+    "inputs": [
+      {
+        "name": "Palladium Metallic Powder",
+        "amount": "9D"
+      },
+      {
+        "name": "Palladium Enriched Ammonia",
+        "amount": "9000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Palladium Salt Dust",
+        "amount": "16D"
+      },
+      {
+        "name": "Reprecipitated Palladium Dust",
+        "amount": "2D"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Carbon Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Oxygen Gas",
+        "amount": "2000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Carbon Monoxide",
+        "amount": "2000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Sodium Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "Water",
+        "amount": "2000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Sodium Hydroxide",
+        "amount": "6D"
+      },
+      {
+        "name": "Hydrogen Gas",
+        "amount": "2000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Sodium Hydroxide",
+        "amount": "6D"
+      },
+      {
+        "name": "Carbon Monoxide",
+        "amount": "2000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Sodium Formate",
+        "amount": "2000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Sodium Formate",
+        "amount": "2000L"
+      },
+      {
+        "name": "Sulfuric Acid",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Formic Acid",
+        "amount": "2000L"
+      },
+      {
+        "name": "Sodium Sulfate Dust",
+        "amount": "7D"
+      }
+    ]
+  },
+  {
+    "name": "Electrolyzer",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Sodium Sulfate Dust",
+        "amount": "7000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Sulfur",
+        "amount": "1D"
+      },
+      {
+        "name": "Oxygen",
+        "amount": "4000L"
+      },
+      {
+        "name": "Liquid Sodium",
+        "amount": "2000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 24,
+    "inputs": [
+      {
+        "name": "Sulfur",
+        "amount": "1D"
+      },
+      {
+        "name": "Oxygen",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Sulfuric Acid",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "FluidSolidifier",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Liquid Sodium",
+        "amount": "2000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Sodium Dust",
+        "amount": "2D"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Reprecipitated Palladium Dust",
+        "amount": "4D"
+      },
+      {
+        "name": "Formic Acid",
+        "amount": "4000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Palladium Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "Ammonia",
+        "amount": "4000L"
+      },
+      {
+        "name": "Ethylene",
+        "amount": "1000L"
+      },
+      {
+        "name": "Water",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "EBF",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Leach Residue Dust",
+        "amount": "10D"
+      },
+      {
+        "name": "Saltpeter",
+        "amount": "10D"
+      },
+      {
+        "name": "Salt Water",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Sodium Ruthenate Dust",
+        "amount": "3D"
+      },
+      {
+        "name": "Rarest Metal Residue Dust",
+        "amount": "6D"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Sodium Ruthenate Dust",
+        "amount": "6D"
+      },
+      {
+        "name": "Chlorine",
+        "amount": "3000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Ruthenium Tetroxide Solution",
+        "amount": "9000L"
+      }
+    ]
+  },
+  {
+    "name": "OilCracker",
+    "tier": "HV",
+    "circuit": 17,
+    "inputs": [
+      {
+        "name": "Steam",
+        "amount": "1000L"
+      },
+      {
+        "name": "Ruthenium Tetroxide Solution",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Hot Ruthenium Tetroxide Solution",
+        "amount": "2000L"
+      }
+    ]
+  },
+  {
+    "name": "DT",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Hot Ruthenium Tetroxide Solution",
+        "amount": "9000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Salt",
+        "amount": "6D"
+      },
+      {
+        "name": "Water",
+        "amount": "1800L"
+      },
+      {
+        "name": "Ruthenium Tetroxide",
+        "amount": "7200L"
+      }
+    ]
+  },
+  {
+    "name": "FluidSolidifier",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Ruthenium Tetroxide",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Ruthenium Tetroxide Dust",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Ruthenium Tetroxide Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Hydrochloric Acid",
+        "amount": "6000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Ruthenium Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Chlorine",
+        "amount": "6000L"
+      },
+      {
+        "name": "Water",
+        "amount": "2000L"
+      }
+    ]
+  },
+  {
+    "name": "EBF",
+    "tier": "HV",
+    "circuit": 11,
+    "inputs": [
+      {
+        "name": "Rarest Metal Residue Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "Hydrochloric Acid",
+        "amount": "500L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Iridium Metal Residue Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Acidic Osmium Solution",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "DT",
+    "tier": "IV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Acidic Osmium Solution",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Osmium Solution",
+        "amount": "100L"
+      },
+      {
+        "name": "Water",
+        "amount": "900L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Osmium Solution",
+        "amount": "1000L"
+      },
+      {
+        "name": "Hydrochloric Acid",
+        "amount": "7000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Osmium Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Chlorine",
+        "amount": "7000L"
+      },
+      {
+        "name": "Water",
+        "amount": "2000L"
+      }
+    ]
+  },
+  {
+    "name": "EBF",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Iridium Metal Residue Dust",
+        "amount": "1D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Iridium Dioxide Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Sludge Dust Residue Dust",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Iridium Dioxide Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Hydrochloric Acid",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Acidic Iridium Solution",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Acidic Iridium Solution",
+        "amount": "1000L"
+      },
+      {
+        "name": "Ammonium Chloride",
+        "amount": "3000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Iridium Chloride Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Ammonia",
+        "amount": "3000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Iridium Chloride Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Calcium Dust",
+        "amount": "1D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Iridium Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Mettalic Sludge Dust Residue Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Calcium Chloride",
+        "amount": "3000L"
+      }
+    ]
+  },
+  {
+    "name": "FluidSolidifier",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Calcium Chloride",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Calcium Chloride Dust",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "Electrolyzer",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Calcium Chloride Dust",
+        "amount": "3D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Calcium Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Chlorine",
+        "amount": "2000L"
+      }
+    ]
+  }
+]

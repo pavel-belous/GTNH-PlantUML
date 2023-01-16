@@ -1,0 +1,60 @@
+@startuml
+scale 1
+'skinparam linetype polyline
+'skinparam linetype ortho
+'left to right direction
+
+
+!function $getGTcircuitImage($circuitNo=0)
+   !return "<img:../../lib/resources/gregtech/textures/items/gt.integrated_circuit/"+$circuitNo+".png>"
+!endfunction
+
+!procedure $drawNode($circuitNo=0)
+    node "$getGTcircuitImage($circuitNo)" as test {
+        [ %getenv("WORKDIR") - value]
+    }
+!endprocedure
+
+
+!procedure $drawMachines()
+    !$fullMachineName = $machineName+$machineNumber
+    !$machines = %load_json("platline.json")
+    !$machineNumber = 0
+    !$inputNumber = 0
+    !$outputNumber = 0
+    !foreach $machine in $machines
+      !$machineNumber = $machineNumber + 1
+      !$fullMachineName = $machine.name + $machineNumber
+      !$tier = $machine.tier
+      !$circuit = $machine.circuit
+      !$rectangleName = %string("rec"+$fullMachineName)
+      rectangle " " as $fullMachineName {
+          rectangle "$tier $machine.name, $getGTcircuitImage($circuit)" as $rectangleName {
+          }
+
+          !foreach $input in $machine.inputs
+            !$inputNumber = $inputNumber + 1
+            !$portInName = %string("pi"+$inputNumber+$fullMachineName)
+            portin "$input.name" as $portInName
+            $portInName --# $rectangleName: $input.amount
+          !endfor
+
+          !foreach $output in $machine.outputs
+            !$outputNumber = $outputNumber + 1
+            !$portOutName = %string("po"+$outputNumber+$fullMachineName)
+            portout "$output.name" as $portOutName
+            $rectangleName #---- $portOutName: $output.amount
+          !endfor
+
+
+      }
+    !endfor
+
+
+!endprocedure
+
+
+
+$drawMachines()
+
+@enduml
