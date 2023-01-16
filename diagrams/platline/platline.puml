@@ -33,38 +33,35 @@ skinparam rectangle {
     !$inputNumber = 0
     !$outputNumber = 0
     !foreach $machine in $machines
-      !$machineNumber = $machineNumber + 1
-      !$fullMachineName = $machine.name + $machineNumber
-      !$tier = $machine.tier
-      !$circuit = $machine.circuit
-      !$rectangleName = %string("rec"+$fullMachineName)
-      rectangle " " as $fullMachineName {
-          rectangle "$machine.name $getGTcircuitImage($circuit)" <<$tier>>  as $rectangleName  {
-          }
+        !$machineNumber = $machineNumber + 1
+        !$fullMachineName = $machine.name + $machineNumber
+        !$tier = $machine.tier
+        !$circuit = $machine.circuit
+        !$rectangleName = %string("rec"+$fullMachineName)
+        rectangle " " as $fullMachineName {
+            rectangle "$machine.name $getGTcircuitImage($circuit)" <<$tier>>  as $rectangleName  {
+            }
+            !foreach $input in $machine.inputs
+                !$inputNumber = $inputNumber + 1
+                !$portInName = %string("pi"+$inputNumber+$fullMachineName)
+                !if ($DEBUG)
+                    portin "$input.name\n$portInName" as $portInName
+                !else
+                    portin "$input.name" as $portInName
+                !endif
+                $portInName --# $rectangleName: $input.amount
+            !endfor
 
-          !foreach $input in $machine.inputs
-            !$inputNumber = $inputNumber + 1
-            !$portInName = %string("pi"+$inputNumber+$fullMachineName)
-            !if ($DEBUG)
-                portin "$input.name\n$portInName" as $portInName
-            !else
-                portin "$input.name" as $portInName
-            !endif
-            $portInName --# $rectangleName: $input.amount
-          !endfor
-
-          !foreach $output in $machine.outputs
-            !$outputNumber = $outputNumber + 1
-            !$portOutName = %string("po"+$outputNumber+$fullMachineName)
-            !if ($DEBUG)
-                portout "$output.name\n$portOutName" as $portOutName
-            !else
-                portout "$output.name" as $portOutName
-            !endif
-            $rectangleName #---- $portOutName: $output.amount
-          !endfor
-
-
+            !foreach $output in $machine.outputs
+                !$outputNumber = $outputNumber + 1
+                !$portOutName = %string("po"+$outputNumber+$fullMachineName)
+                !if ($DEBUG)
+                    portout "$output.name\n$portOutName" as $portOutName
+                !else
+                    portout "$output.name" as $portOutName
+                !endif
+                $rectangleName #---- $portOutName: $output.amount
+            !endfor
       }
     !endfor
 !endprocedure
