@@ -9,6 +9,11 @@ skinparam rectangle {
     BackgroundColor<<IV>> #625D98
 }
 
+' debug flag
+' %true() - display ports names, useful for creating relations
+' %false() - dont display ports names
+!$DEBUG = %true()
+
 !function $getGTcircuitImage($circuitNo=0)
    !return "<img:../../lib/resources/gregtech/textures/items/gt.integrated_circuit/"+$circuitNo+".png>"
 !endfunction
@@ -39,14 +44,22 @@ skinparam rectangle {
           !foreach $input in $machine.inputs
             !$inputNumber = $inputNumber + 1
             !$portInName = %string("pi"+$inputNumber+$fullMachineName)
-            portin "$input.name" as $portInName
+            !if ($DEBUG)
+                portin "$input.name\n$portInName" as $portInName
+            !else
+                portin "$input.name" as $portInName
+            !endif
             $portInName --# $rectangleName: $input.amount
           !endfor
 
           !foreach $output in $machine.outputs
             !$outputNumber = $outputNumber + 1
             !$portOutName = %string("po"+$outputNumber+$fullMachineName)
-            portout "$output.name" as $portOutName
+            !if ($DEBUG)
+                portout "$output.name\n$portOutName" as $portOutName
+            !else
+                portout "$output.name" as $portOutName
+            !endif
             $rectangleName #---- $portOutName: $output.amount
           !endfor
 
