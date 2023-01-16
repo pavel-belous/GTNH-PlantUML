@@ -1,0 +1,25 @@
+@startuml
+'skinparam linetype polyline
+'skinparam linetype ortho
+'left to right direction
+rectangle " " as object {
+    map "LCR" as map {
+    tier => HV
+    circuit => 24
+    recipe cycles => 1
+  }
+  portin  p1
+  portin  p2
+  portin  p3
+  portout  po1
+  portout  po2
+  portout  po3
+
+  p1 --# map: 1000L
+  p2 --# map
+  p3 --# map
+  map -- po1
+  map -- po2
+  map -- po3
+}
+@enduml
