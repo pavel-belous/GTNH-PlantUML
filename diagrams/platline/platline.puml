@@ -125,5 +125,7 @@ po69 -- pi68
 po70 -- pi69
 po71 -- pi67
 
+'connect leach residue with iridium/osmium lines
+po3 -- pi45
 
 @enduml
