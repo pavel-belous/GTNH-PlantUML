@@ -72,4 +72,13 @@ $drawMachines()
 
 po1 -- pi4
 po2 -- pi6
+po4 --pi8
+po7 -- pi9
+po9 -- pi12
+po13 -- pi15
+po14 -- pi18
+po15 -- pi21
+po19 -- pi22
+po20 -- pi24
+po21 -- pi25
 @enduml
