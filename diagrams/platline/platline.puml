@@ -140,6 +140,9 @@ title
     IV-tier platinum processing line
 endtitle
 
+'header
+'endheader
+
 $drawMachines()
 $drawConnections()
 
