@@ -40,22 +40,22 @@ skinparam rectangle {
                 !$inputNumber = $inputNumber + 1
                 !$portInName = %string("pi"+$inputNumber)
                 !if ($DEBUG)
-                    portin "$input.name\n$portInName" as $portInName
+                    portin "$portInName" as $portInName
                 !else
-                    portin "$input.name" as $portInName
+                    portin " " as $portInName
                 !endif
-                $portInName --# $rectangleName: $input.amount
+                $portInName --# $rectangleName: $input.name\n$input.amount
             !endfor
 
             !foreach $output in $machine.outputs
                 !$outputNumber = $outputNumber + 1
                 !$portOutName = %string("po"+$outputNumber)
                 !if ($DEBUG)
-                    portout "$output.name\n$portOutName" as $portOutName
+                    portout "$portOutName" as $portOutName
                 !else
-                    portout "$output.name" as $portOutName
+                    portout " " as $portOutName
                 !endif
-                $rectangleName #---- $portOutName: $output.amount
+                $rectangleName #---- $portOutName: $output.name\n$output.amount
             !endfor
       }
     !endfor
