@@ -1,0 +1,1 @@
+."$Env:JAVA_HOME\bin\java.exe" -DPLANTUML_LIMIT_SIZE=16384 -jar "$Env:PLANTUML"
