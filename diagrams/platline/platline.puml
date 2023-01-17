@@ -16,7 +16,7 @@ skinparam rectangle {
 
 '-----------Functions--------------------------------------------
 !function $getGTcircuitImage($circuitNo=0)
-   !return "<img:../../lib/resources/gregtech/textures/items/gt.integrated_circuit/"+$circuitNo+".png>"
+   !return "<img:../../lib/resources/gregtech/textures/items/gt.integrated_circuit/upscale/"+$circuitNo+".png>"
 !endfunction
 
 '-----------Procedures-------------------------------------------
@@ -34,7 +34,7 @@ skinparam rectangle {
         !$circuit = $machine.circuit
         !$rectangleName = %string("rec"+$fullMachineName)
         rectangle " " as $fullMachineName {
-            rectangle "$machine.name $getGTcircuitImage($circuit)" <<$tier>>  as $rectangleName  {
+            rectangle "$machine.name\n$getGTcircuitImage($circuit)" <<$tier>>  as $rectangleName  {
             }
             !foreach $input in $machine.inputs
                 !$inputNumber = $inputNumber + 1
