@@ -483,7 +483,7 @@
     "inputs": [
       {
         "name": "Sodium Sulfate Dust",
-        "amount": "7000L"
+        "amount": "7D"
       }
     ],
     "outputs": [
@@ -920,6 +920,61 @@
       {
         "name": "Chlorine",
         "amount": "2000L"
+      }
+    ]
+  },
+  {
+    "name": "FluidSolidifier",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Molten Potassium",
+        "amount": "144L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Potassium Ingot",
+        "amount": "1I"
+      }
+    ]
+  },
+  {
+    "name": "Macerator",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Potassium Ingot",
+        "amount": "1I"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Potassium Dust",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "Mixer",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Salt",
+        "amount": "1D"
+      },
+      {
+        "name": "Water",
+        "amount": "500L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Salt Water",
+        "amount": "500L"
       }
     ]
   }

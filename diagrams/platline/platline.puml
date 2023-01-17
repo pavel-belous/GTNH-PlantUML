@@ -18,6 +18,9 @@ skinparam rectangle {
 ' %true() - display ports names, useful for creating connections
 ' %false() - dont display port names
 !$DEBUG = %true()
+!$fromMainStorage = "#green;line.dotted;text:green : import"
+!$backToMainStorage = "#blue;line.dotted;text:blue : export"
+!$voided = "#red;line.dotted;text:red : void"
 
 '-----------Functions--------------------------------------------
 !function $getGTcircuitImage($circuitNo=0)
@@ -132,6 +135,63 @@ skinparam rectangle {
     'connect leach residue with iridium/osmium lines
     po3 -- pi45
     po5 -- pi45
+    po75 --> pi47
+
+    'potassium recycle
+    po6 ..> pi70
+    po73 --> pi71
+    po74 --> pi1
+
+    'back to main storage / void
+    po40 --> po40 $backToMainStorage
+    po41 --> po41 $backToMainStorage
+    po42 --> po42 $backToMainStorage
+    po16 --> po16 $backToMainStorage
+    po22 --> po22 $backToMainStorage
+    po23 --> po23 $backToMainStorage
+    po24 --> po24 $backToMainStorage
+    po72 --> po72 $backToMainStorage
+    po60 --> po60 $backToMainStorage
+    po59 --> po59 $backToMainStorage
+    po48 --> po48 $backToMainStorage
+    po52 --> po52 $backToMainStorage
+    po53 --> po53 $backToMainStorage
+    po31 --> po31 $voided
+    po43 --> po43 $voided
+    po11 --> po11 $backToMainStorage
+    po12 --> po12 $backToMainStorage
+    po49 --> po49 $voided
+    po61 --> po61 $voided
+    po54 --> po54 $voided
+    po18 --> po18 $backToMainStorage
+    po67 --> po67 $backToMainStorage
+    po68 --> po68 $backToMainStorage
+    po66 --> po66 $backToMainStorage
+    pi20 --> pi20 $fromMainStorage
+    pi19 --> pi19 $fromMainStorage
+    pi16 --> pi16 $fromMainStorage
+    pi13 --> pi13 $fromMainStorage
+    pi14 --> pi14 $fromMainStorage
+    pi31 --> pi31 $fromMainStorage
+    pi32 --> pi32 $fromMainStorage
+    pi27 --> pi27 $fromMainStorage
+    pi34 --> pi34 $fromMainStorage
+    pi30 --> pi30 $fromMainStorage
+    pi63 --> pi63 $fromMainStorage
+    pi60 --> pi60 $fromMainStorage
+    pi50 --> pi50 $fromMainStorage
+    pi49 --> pi49 $fromMainStorage
+    pi57 --> pi57 $fromMainStorage
+    pi46 --> pi46 $fromMainStorage
+    pi7 --> pi7 $fromMainStorage
+    pi72 --> pi72 $fromMainStorage
+    pi73 --> pi73 $fromMainStorage
+    pi2 --> pi2 $fromMainStorage
+    pi3 --> pi3 $fromMainStorage
+    pi5 --> pi5 $fromMainStorage
+    pi23 --> pi23 $fromMainStorage
+    pi55 --> pi55 $fromMainStorage
+    'pi34 --> pi34 $fromMainStorage
 !endprocedure
 
 '-----------Draw Diagram Section---------------------------------
