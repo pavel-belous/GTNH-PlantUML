@@ -189,6 +189,8 @@ skinparam rectangle {
     pi5     --> pi5     $fromMainStorage
     pi23    --> pi23    $fromMainStorage
     pi55    --> pi55    $fromMainStorage
+    pi26    --> pi26    $fromMainStorage
+    pi65    --> pi65    $fromMainStorage
     po31    --> po31    $voided
     po43    --> po43    $voided
     po49    --> po49    $voided
