@@ -44,7 +44,7 @@ skinparam rectangle {
                 !else
                     portin " " as $portInName
                 !endif
-                $portInName --# $rectangleName: $input.name\n$input.amount
+                $portInName --> $rectangleName: $input.name\n$input.amount
             !endfor
 
             !foreach $output in $machine.outputs
@@ -55,7 +55,7 @@ skinparam rectangle {
                 !else
                     portout " " as $portOutName
                 !endif
-                $rectangleName #---- $portOutName: $output.name\n$output.amount
+                $rectangleName #----> $portOutName: $output.name\n$output.amount
             !endfor
       }
     !endfor
@@ -65,60 +65,60 @@ skinparam rectangle {
 ' there's no easy way to calculate and draw connections automatically
 !procedure $drawConnections()
     'rhodium
-    po1 -- pi4
-    po2 -- pi6
-    po4 --pi8
-    po7 -- pi9
-    po9 -- pi12
-    po13 -- pi15
-    po14 -- pi18
-    po15 -- pi21
-    po19 -- pi22
-    po20 -- pi24
-    po21 -- pi25
-    po17 -- pi17
-    po10 -down- pi10
+    po1 --> pi4
+    po2 --> pi6
+    po4 --> pi8
+    po7 --> pi9
+    po9 --> pi12
+    po13 --> pi15
+    po14 --> pi18
+    po15 --> pi21
+    po19 --> pi22
+    po20 --> pi24
+    po21 --> pi25
+    po17 --> pi17
+    po10 -down-> pi10
     'recycle
-    po8 .left. pi11
+    po8 .left.> pi11
 
     'palladium
-    po25 -- pi28
-    po26 -- pi29
-    po28 - pi43
-    po29 -- pi36
-    po32 -- pi37
-    po33 -- pi44
-    po34 .. pi39
-    po37 -- pi42
-    po30 -- pi35
-    po39 .. pi33
-    po38 -- pi38
-    po36 -- pi41
-    po35 -- pi40
-    po27 .up. pi28
+    po25 --> pi28
+    po26 --> pi29
+    po28 -> pi43
+    po29 --> pi36
+    po32 --> pi37
+    po33 --> pi44
+    po34 ..> pi39
+    po37 --> pi42
+    po30 --> pi35
+    po39 ..> pi33
+    po38 --> pi38
+    po36 --> pi41
+    po35 --> pi40
+    po27 .up.> pi28
 
     'ruthenium
-    po44 -- pi48
-    po46 -- pi51
-    po47 -- pi52
-    po50 -- pi53
-    po51 -- pi54
+    po44 --> pi48
+    po46 --> pi51
+    po47 --> pi52
+    po50 --> pi53
+    po51 --> pi54
 
     'rarest metal
-    po45 -- pi56
+    po45 --> pi56
 
     'osmium
-    po56 -- pi58
-    po57 -- pi59
+    po56 --> pi58
+    po57 --> pi59
 
     'iridium
-    po55 -- pi61
-    po62 -- pi62
-    po64 -- pi64
-    po65 -- pi66
-    po69 -- pi68
-    po70 -- pi69
-    po71 .. pi67
+    po55 --> pi61
+    po62 --> pi62
+    po64 --> pi64
+    po65 --> pi66
+    po69 --> pi68
+    po70 --> pi69
+    po71 ..> pi67
 
     'connect leach residue with iridium/osmium lines
     po3 -- pi45
