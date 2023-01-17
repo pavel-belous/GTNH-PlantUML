@@ -29,6 +29,14 @@ skinparam rectangle {
 
 '-----------Procedures-------------------------------------------
 
+' Draws machines and their inputs/outputs using array from .json file.
+' Connections are drawn by $drawConnections function.
+' All connections are ordered and depends from their actual position in array of .json file.
+' This leads to:
+'   1. New machines MUST BE added to the end of the array in .json file,
+'      otherwise existing connections will be broken.
+'   2. You cant rearrange/add/remove existing machines or their inputs/outputs,
+'      otherwise existing connections will be broken.
 !procedure $drawMachines()
     !$fullMachineName = $machineName+$machineNumber
     !$machines = %load_json("platline.json")
