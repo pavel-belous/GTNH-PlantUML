@@ -135,6 +135,10 @@ skinparam rectangle {
 !endprocedure
 
 '-----------Draw Diagram Section---------------------------------
+title
+    Gregtech New Horizons
+    IV-tier platinum processing line
+endtitle
 
 $drawMachines()
 $drawConnections()
