@@ -84,7 +84,7 @@ skinparam rectangle {
     'palladium
     po25 -- pi28
     po26 -- pi29
-    po28 -- pi43
+    po28 - pi43
     po29 -- pi36
     po32 -- pi37
     po33 -- pi44
@@ -95,6 +95,7 @@ skinparam rectangle {
     po38 -- pi38
     po36 -- pi41
     po35 -- pi40
+    po27 .up. pi28
 
     'ruthenium
     po44 -- pi48
