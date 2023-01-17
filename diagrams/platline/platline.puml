@@ -8,6 +8,11 @@ skinparam rectangle {
     BackgroundColor<<EV>> #D79DE4
     BackgroundColor<<IV>> #625D98
 }
+<style>
+    title {
+        HorizontalAlignment center
+    }
+</style>
 
 ' debug flag
 ' %true() - display ports names, useful for creating connections
