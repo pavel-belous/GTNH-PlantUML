@@ -1,0 +1,1 @@
+magick "*.png" -scale 400% upscale/%d.png
