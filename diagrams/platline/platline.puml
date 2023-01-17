@@ -43,12 +43,52 @@ skinparam rectangle {
     !$machineNumber = 0
     !$inputNumber = 0
     !$outputNumber = 0
+    !$HVLCRCount = 0
+    !$EVLCRCount = 0
+    !$HVEBFCount = 0
+    !$HVElectroCount = 0
+    !$HVDTCount = 0
+    !$IVDTCount = 0
+    !$HVSifterCount = 0
+    !$HVFluidSolidifierCount = 0
+    !$HVMaceratorCount = 0
+    !$HVMixerCount = 0
+    !$HVOilCrackerCount = 0
+    !$HVFluidExtractorCount = 0
+    !$TotalMachinesCount = 0
     !foreach $machine in $machines
         !$machineNumber = $machineNumber + 1
+        !$TotalMachinesCount = $TotalMachinesCount + 1
         !$fullMachineName = $machine.name + $machineNumber
         !$tier = $machine.tier
         !$circuit = $machine.circuit
         !$rectangleName = %string("rec"+$fullMachineName)
+        !$countMachineName = $tier + " " + $machine.name
+        !if ($countMachineName == "HV LCR")
+            !$HVLCRCount = $HVLCRCount + 1
+        !elseif ($countMachineName == "EV LCR")
+            !$EVLCRCount = $EVLCRCount + 1
+        !elseif ($countMachineName == "HV EBF")
+            !$HVEBFCount = $HVEBFCount + 1
+        !elseif ($countMachineName == "HV Electrolyzer")
+            !$HVElectroCount = $HVElectroCount + 1
+        !elseif ($countMachineName == "HV DT")
+            !$HVDTCount = $HVDTCount + 1
+        !elseif ($countMachineName == "IV DT")
+            !$IVDTCount = $IVDTCount + 1
+        !elseif ($countMachineName == "HV Sifter")
+            !$HVSifterCount = $HVSifterCount + 1
+        !elseif ($countMachineName == "HV FluidSolidifier")
+            !$HVFluidSolidifierCount = $HVFluidSolidifierCount + 1
+        !elseif ($countMachineName == "HV Macerator")
+            !$HVMaceratorCount = $HVMaceratorCount + 1
+        !elseif ($countMachineName == "HV Mixer")
+            !$HVMixerCount = $HVMixerCount + 1
+        !elseif ($countMachineName == "HV OilCracker")
+            !$HVOilCrackerCount = $HVOilCrackerCount + 1
+        !elseif ($countMachineName == "HV FluidExtractor")
+            !$HVFluidExtractorCount = $HVFluidExtractorCount + 1
+        !endif
         rectangle " " as $fullMachineName {
             rectangle "$machine.name\n$getGTcircuitImage($circuit)" <<$tier>>  as $rectangleName  {
             }
@@ -75,6 +115,24 @@ skinparam rectangle {
             !endfor
       }
     !endfor
+    rectangle machines [
+        machines
+        --
+        | machine name              |     count     |
+        |   HV LCR                  |   $HVLCRCount |
+        |   EV LCR                  |   $EVLCRCount|
+        |   HV EBF                  |   $HVEBFCount|
+        |   HV Electrolyzer         |   $HVElectroCount|
+        |   HV DT                   |   $HVDTCount|
+        |   IV DT                   |   $IVDTCount|
+        |   HV Sifter               |   $HVSifterCount|
+        |   HV Fluid Solidifier     |   $HVFluidSolidifierCount|
+        |   HV Macerator            |   $HVMaceratorCount|
+        |   HV Mixer                |   $HVMixerCount|
+        |   HV Oil Cracker          |   $HVOilCrackerCount|
+        |   HV Fluid Extractor      |   $HVFluidExtractorCount|
+        |   **total:**| ** $TotalMachinesCount **|
+    ]
 !endprocedure
 
 ' since PlantUML preprocessor doesnt have arrays manipulation
