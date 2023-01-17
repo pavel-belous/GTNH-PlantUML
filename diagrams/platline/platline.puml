@@ -61,8 +61,12 @@ skinparam rectangle {
     !endfor
 !endprocedure
 
-' since preprocessor doesnt have arrays
+' since PlantUML preprocessor doesnt have arrays manipulation
 ' there's no easy way to calculate and draw connections automatically
+'
+' "pi" is shortcut from PortIn which mean machine input
+' "po" is shortcut from PortOut which mean machine output
+' actual port names below can be seen on diagram after $DEBUG flag enabling
 !procedure $drawConnections()
     'rhodium
     po1 --> pi4
