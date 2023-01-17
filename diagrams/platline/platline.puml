@@ -1,5 +1,5 @@
 @startuml
-scale 1
+scale 0.7
 'skinparam linetype polyline
 'skinparam linetype ortho
 left to right direction
@@ -77,9 +77,9 @@ skinparam rectangle {
     po20 -- pi24
     po21 -- pi25
     po17 -- pi17
+    po10 -down- pi10
     'recycle
     po8 .left. pi11
-    po10 .down. pi10
 
     'palladium
     po25 -- pi28
@@ -121,6 +121,7 @@ skinparam rectangle {
 
     'connect leach residue with iridium/osmium lines
     po3 -- pi45
+    po5 -- pi45
 !endprocedure
 
 '-----------Draw Diagram Section---------------------------------
