@@ -10,7 +10,7 @@ skinparam rectangle {
 }
 
 ' debug flag
-' %true() - display ports names, useful for creating relations
+' %true() - display ports names, useful for creating connections
 ' %false() - dont display ports names
 !$DEBUG = %true()
 
@@ -61,6 +61,8 @@ skinparam rectangle {
     !endfor
 !endprocedure
 
+' since preprocessor doesnt have arrays
+' there's no easy way to calculate and draw connections automatically
 !procedure $drawConnections()
     'rhodium
     po1 -- pi4
@@ -125,6 +127,5 @@ skinparam rectangle {
 
 $drawMachines()
 $drawConnections()
-
 
 @enduml
