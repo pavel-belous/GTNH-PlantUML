@@ -1,5 +1,5 @@
 @startuml
-scale 0.7
+scale 1
 'skinparam linetype polyline
 'skinparam linetype ortho
 left to right direction
@@ -11,7 +11,7 @@ skinparam rectangle {
 
 ' debug flag
 ' %true() - display ports names, useful for creating connections
-' %false() - dont display ports names
+' %false() - dont display port names
 !$DEBUG = %true()
 
 '-----------Functions--------------------------------------------
@@ -117,7 +117,7 @@ skinparam rectangle {
     po65 -- pi66
     po69 -- pi68
     po70 -- pi69
-    po71 .right. pi67
+    po71 .. pi67
 
     'connect leach residue with iridium/osmium lines
     po3 -- pi45
