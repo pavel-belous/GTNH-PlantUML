@@ -23,15 +23,24 @@
     !$HVLCRCount = 0
     !$EVLCRCount = 0
     !$HVEBFCount = 0
+    !$EVEBFCount = 0
     !$HVElectroCount = 0
     !$HVDTCount = 0
     !$IVDTCount = 0
     !$HVSifterCount = 0
+    !$EVSifterCount = 0
     !$HVFluidSolidifierCount = 0
     !$HVMaceratorCount = 0
     !$HVMixerCount = 0
     !$HVOilCrackerCount = 0
     !$HVFluidExtractorCount = 0
+    !$EVCentrifugeCount = 0
+    !$HVChemicalBathCount = 0
+    !$HVDigesterCount = 0
+    !$EVDigesterCount = 0
+    !$HVDissolutionTankCount = 0
+    !$HVVacuumFreezerCount = 0
+    !$EVElectromagneticSeparatorCount = 0
     !$TotalMachinesCount = 0
     !foreach $machine in $machines
         !$machineNumber = $machineNumber + 1
@@ -47,6 +56,8 @@
             !$EVLCRCount = $EVLCRCount + 1
         !elseif ($countMachineName == "HV EBF")
             !$HVEBFCount = $HVEBFCount + 1
+        !elseif ($countMachineName == "EV EBF")
+            !$EVEBFCount = $EVEBFCount + 1
         !elseif ($countMachineName == "HV Electrolyzer")
             !$HVElectroCount = $HVElectroCount + 1
         !elseif ($countMachineName == "HV DT")
@@ -55,6 +66,8 @@
             !$IVDTCount = $IVDTCount + 1
         !elseif ($countMachineName == "HV Sifter")
             !$HVSifterCount = $HVSifterCount + 1
+        !elseif ($countMachineName == "EV Sifter")
+            !$EVSifterCount = $EVSifterCount + 1
         !elseif ($countMachineName == "HV FluidSolidifier")
             !$HVFluidSolidifierCount = $HVFluidSolidifierCount + 1
         !elseif ($countMachineName == "HV Macerator")
@@ -65,6 +78,20 @@
             !$HVOilCrackerCount = $HVOilCrackerCount + 1
         !elseif ($countMachineName == "HV FluidExtractor")
             !$HVFluidExtractorCount = $HVFluidExtractorCount + 1
+        !elseif ($countMachineName == "EV Centrifuge")
+            !$EVCentrifugeCount = $EVCentrifugeCount + 1
+        !elseif ($countMachineName == "HV ChemicalBath")
+            !$HVChemicalBathCount = $HVChemicalBathCount + 1
+        !elseif ($countMachineName == "HV Digester")
+            !$HVDigesterCount = $HVDigesterCount + 1
+        !elseif ($countMachineName == "EV Digester")
+            !$EVDigesterCount = $EVDigesterCount + 1
+        !elseif ($countMachineName == "HV DissolutionTank")
+            !$HVDissolutionTankCount = $HVDissolutionTankCount + 1
+        !elseif ($countMachineName == "HV VacuumFreezer")
+            !$HVVacuumFreezerCount = $HVVacuumFreezerCount + 1
+        !elseif ($countMachineName == "EV ElectromagneticSeparator")
+            !$EVElectromagneticSeparatorCount = $EVElectromagneticSeparatorCount + 1
         !endif
         rectangle " " as $fullMachineName {
             rectangle "$machine.name\n$getGTcircuitImage($circuit)" <<$tier>>  as $rectangleName  {
@@ -105,6 +132,9 @@
         !if ($HVEBFCount>0)
         |   HV EBF                  |   $HVEBFCount|
         !endif
+        !if ($EVEBFCount>0)
+        |   EV EBF                  |   $EVEBFCount|
+        !endif
         !if ($HVElectroCount>0)
         |   HV Electrolyzer         |   $HVElectroCount|
         !endif
@@ -116,6 +146,9 @@
         !endif
         !if ($HVSifterCount>0)
         |   HV Sifter               |   $HVSifterCount|
+        !endif
+        !if ($EVSifterCount>0)
+        |   EV Sifter               |   $EVSifterCount|
         !endif
         !if ($HVFluidSolidifierCount>0)
         |   HV Fluid Solidifier     |   $HVFluidSolidifierCount|
@@ -132,7 +165,27 @@
         !if ($HVFluidExtractorCount>0)
         |   HV Fluid Extractor      |   $HVFluidExtractorCount|
         !endif
-
+        !if ($EVCentrifugeCount>0)
+        |   EV Centrifuge      |   $EVCentrifugeCount|
+        !endif
+        !if ($HVChemicalBathCount>0)
+        |   HV Chemical Bath      |   $HVChemicalBathCount|
+        !endif
+        !if ($HVDigesterCount>0)
+        |   HV Digester      |   $HVDigesterCount|
+        !endif
+        !if ($EVDigesterCount>0)
+        |   EV Digester      |   $EVDigesterCount|
+        !endif
+        !if ($HVDissolutionTankCount>0)
+        |   HV Dissolution Tank      |   $HVDissolutionTankCount|
+        !endif
+        !if ($HVVacuumFreezerCount>0)
+        |   HV Vacuum Freezer      |   $HVVacuumFreezerCount|
+        !endif
+        !if ($EVElectromagneticSeparatorCount>0)
+        |   EV Electromagnetic Separator      |   $EVElectromagneticSeparatorCount|
+        !endif
         |   **total:** | ** $TotalMachinesCount **|
     ]
 !endprocedure
