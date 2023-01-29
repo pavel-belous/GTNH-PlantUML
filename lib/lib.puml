@@ -96,19 +96,44 @@
         machines
         --
         | machine name              |     count     |
+        !if ($HVLCRCount>0)
         |   HV LCR                  |   $HVLCRCount |
+        !endif
+        !if ($EVLCRCount>0)
         |   EV LCR                  |   $EVLCRCount|
+        !endif
+        !if ($HVEBFCount>0)
         |   HV EBF                  |   $HVEBFCount|
+        !endif
+        !if ($HVElectroCount>0)
         |   HV Electrolyzer         |   $HVElectroCount|
+        !endif
+        !if ($HVDTCount>0)
         |   HV DT                   |   $HVDTCount|
+        !endif
+        !if ($IVDTCount>0)
         |   IV DT                   |   $IVDTCount|
+        !endif
+        !if ($HVSifterCount>0)
         |   HV Sifter               |   $HVSifterCount|
+        !endif
+        !if ($HVFluidSolidifierCount>0)
         |   HV Fluid Solidifier     |   $HVFluidSolidifierCount|
+        !endif
+        !if ($HVMaceratorCount>0)
         |   HV Macerator            |   $HVMaceratorCount|
+        !endif
+        !if ($HVMixerCount>0)
         |   HV Mixer                |   $HVMixerCount|
+        !endif
+        !if ($HVOilCrackerCount>0)
         |   HV Oil Cracker          |   $HVOilCrackerCount|
+        !endif
+        !if ($HVFluidExtractorCount>0)
         |   HV Fluid Extractor      |   $HVFluidExtractorCount|
-        |   **total:**| ** $TotalMachinesCount **|
+        !endif
+
+        |   **total:** | ** $TotalMachinesCount **|
     ]
 !endprocedure
 @enduml
