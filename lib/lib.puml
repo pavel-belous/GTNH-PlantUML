@@ -14,9 +14,9 @@
 '      otherwise existing connections will be broken.
 '   2. You cant rearrange/add/remove existing machines or their inputs/outputs,
 '      otherwise existing connections will be broken.
-!procedure $drawMachines()
+!procedure $drawMachines($jsonFileName)
     !$fullMachineName = $machineName+$machineNumber
-    !$machines = %load_json("platline.json")
+    !$machines = %load_json($jsonFileName)
     !$machineNumber = 0
     !$inputNumber = 0
     !$outputNumber = 0
