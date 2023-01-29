@@ -1,26 +1,766 @@
 [
   {
+    "name": "Digester",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Crushed Monazite Ore",
+        "amount": "2D"
+      },
+      {
+        "name": "Nitric Acid",
+        "amount": "700L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Silicone Dioxide Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Muddy Monazite Rare Earth Solution",
+        "amount": "400L"
+      }
+    ]
+  },
+  {
+    "name": "Dissolution Tank",
+    "tier": "HV",
+    "circuit": 9,
+    "inputs": [
+      {
+        "name": "Muddy Monazite Rare Earth Solution",
+        "amount": "9000L"
+      },
+      {
+        "name": "Water",
+        "amount": "90000L"
+      },
+      {
+        "name": "Saltpeter",
+        "amount": "9D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Diluted Monazite Rare Earth Mud",
+        "amount": "99000L"
+      },
+      {
+        "name": "Hafnia-Zirconia Blend Dust",
+        "amount": "4D"
+      },
+      {
+        "name": "Thorianite Dust",
+        "amount": "9D"
+      },
+      {
+        "name": "Monazite Dust",
+        "amount": "2D"
+      }
+    ]
+  },
+  {
+    "name": "Sifter",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Diluted Monazite Rare Earth Mud",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Monazite Sulfate Dust",
+        "amount": "1D, 90%"
+      },
+      {
+        "name": "Silicon Dioxide Dust",
+        "amount": "1D, 75%"
+      },
+      {
+        "name": "Rutile Dust",
+        "amount": "1D, 20%"
+      },
+      {
+        "name": "Red Zircon Dust",
+        "amount": "1D, 5%"
+      },
+      {
+        "name": "Ilmenite Dust",
+        "amount": "1D, 20%"
+      }
+    ]
+  },
+  {
+    "name": "Mixer",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Monazite Sulfate Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Water",
+        "amount": "6000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Diluted Monazite Sulfate",
+        "amount": "7000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 14,
+    "inputs": [
+      {
+        "name": "Diluted Monazite Sulfate",
+        "amount": "9000L"
+      },
+      {
+        "name": "Ammonium Nitrate Solution",
+        "amount": "1800L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Acidic Monazite Powder Dust",
+        "amount": "3D"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 12,
+    "inputs": [
+      {
+        "name": "Nitric Acid",
+        "amount": "1000L"
+      },
+      {
+        "name": "Ammonia",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Ammonium Nitrate Solution",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "Sifter",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Acidic Monazite Powder Dust",
+        "amount": "1D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Monazite Rare Earth Filtrate Dust",
+        "amount": "1D, 90%"
+      },
+      {
+        "name": "Thorium-Phosphate Cake Dust",
+        "amount": "1D, 70%"
+      }
+    ]
+  },
+  {
+    "name": "Chemical Bath",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Monazite Rare Earth Filtrate Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Ammonium Nitrate Solution",
+        "amount": "320L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Neutralized Monazite Rare Earth Filtrate Dust",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "Sifter",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Neutralized Monazite Rare Earth Filtrate Dust",
+        "amount": "1D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Monazite Rare Earth Hydroxide Concentrate Dust",
+        "amount": "1D, 90%"
+      },
+      {
+        "name": "UraniumFiltrate Dust",
+        "amount": "1D, 90%"
+      }
+    ]
+  },
+  {
+    "name": "EBF",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Monazite Rare Earth Hydroxide Concentrate Dust",
+        "amount": "1D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Dried Monazite Rare Earth Concentrate Dust",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
     "name": "LCR",
     "tier": "HV",
     "circuit": 0,
     "inputs": [
       {
-        "name": "Potassium Dust",
-        "amount": "2D"
+        "name": "Dried Monazite Rare Earth Concentrate Dust",
+        "amount": "1D"
       },
       {
-        "name": "Sulfur Dust",
-        "amount": "2D"
-      },
-      {
-        "name": "Oxygen",
-        "amount": "7000L"
+        "name": "Nitric Acid",
+        "amount": "500L"
       }
     ],
     "outputs": [
       {
-        "name": "Potassium Disulfate Dust",
-        "amount": "11D"
+        "name": "Nitrogenated Monazite Rare Earth Concentrate",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "Mixer",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Nitrogenated Monazite Rare Earth Concentrate",
+        "amount": "1000L"
+      },
+      {
+        "name": "Water",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Nitric-Leached Monazite Mixture",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "Sifter",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Nitric-Leached Monazite Mixture",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Nitric Monazite Leached Concentrate",
+        "amount": "1000L"
+      },
+      {
+        "name": "Cerium Dioxide Dust",
+        "amount": "1D, 11.11%"
+      }
+    ]
+  },
+  {
+    "name": "Vacuum Freezer",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Nitric Monazite Leached Concentrate",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Cooled Monazite Rare Earth Concentrate Dust",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "Electromagnetic Separator",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Cooled Monazite Rare Earth Concentrate Dust",
+        "amount": "1D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "MonaziteRarer Earth Sediment Dust",
+        "amount": "1D, 90%"
+      },
+      {
+        "name": "Europium Oxide Dust",
+        "amount": "2D, 5%"
+      }
+    ]
+  },
+  {
+    "name": "EBF",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "MonaziteRarer Earth Sediment Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Chlorine",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Heterogenous Halogenic Monazite Rare Earth Mixture Dust",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "Mixer",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Heterogenous Halogenic Monazite Rare Earth Mixture Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Samarium Ore Concentrate Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "Acetone",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Saturated Monazite Rare Earth Dust",
+        "amount": "3D"
+      }
+    ]
+  },
+  {
+    "name": "Centrifuge",
+    "tier": "EV",
+    "circuit": 4,
+    "inputs": [
+      {
+        "name": "Saturated Monazite Rare Earth Dust",
+        "amount": "4D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Samaric Residue Dust",
+        "amount": "3D"
+      },
+      {
+        "name": "Chloromethane",
+        "amount": "400L"
+      }
+    ]
+  },
+  {
+    "name": "Sifter",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Samaric Residue Dust",
+        "amount": "3D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Samarium Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "Gadolinium Dust",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Cerium Dioxide Dust",
+        "amount": "3D"
+      },
+      {
+        "name": "Ammonium Chloride",
+        "amount": "3000L"
+      },
+      {
+        "name": "Hydrogen Gas",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Cerium Chloride Dust",
+        "amount": "4D"
+      },
+      {
+        "name": "Ammonia",
+        "amount": "3000L"
+      },
+      {
+        "name": "Steam",
+        "amount": "2000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Nitric Acid",
+        "amount": "6000L"
+      },
+      {
+        "name": "Sugar",
+        "amount": "24D"
+      },
+      {
+        "name": "Vanadium Pentoxide Dust",
+        "amount": "1D, NC"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Oxalate",
+        "amount": "3000L"
+      },
+      {
+        "name": "Nitric Oxide",
+        "amount": "6000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Cerium Chloride Dust",
+        "amount": "8D"
+      },
+      {
+        "name": "Oxalate",
+        "amount": "3000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Cerium Oxalate Dust",
+        "amount": "5D"
+      },
+      {
+        "name": "Hydrochloric Acid",
+        "amount": "6000L"
+      }
+    ]
+  },
+  {
+    "name": "EBF",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Cerium Oxalate Dust",
+        "amount": "5D"
+      },
+      {
+        "name": "Carbon Dust",
+        "amount": "3D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Cerium (III) Oxide Dust",
+        "amount": "5D"
+      },
+      {
+        "name": "Carbon Monoxide",
+        "amount": "9000L"
+      }
+    ]
+  },
+  {
+    "name": "Electrolyzer",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Cerium (III) Oxide Dust",
+        "amount": "5D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Cerium Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "Oxygen Gas",
+        "amount": "3000L"
+      }
+    ]
+  },
+  {
+    "name": "Centrifuge",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Hafnia-Zirconia Blend Dust",
+        "amount": "1D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Hafnia Dust",
+        "amount": "3D"
+      },
+      {
+        "name": "Zirconia Dust",
+        "amount": "3D"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Hafnia Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "Hydrochloric Acid",
+        "amount": "4000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Hafnium Tetrachloride Dust",
+        "amount": "5D"
+      },
+      {
+        "name": "Water",
+        "amount": "2000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Hafnium Tetrachloride Dust",
+        "amount": "5D"
+      },
+      {
+        "name": "Water",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Hafnium Tetrachloride Solution",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "EBF",
+    "tier": "EV",
+    "circuit": 2,
+    "inputs": [
+      {
+        "name": "Magnesium Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "Hafnium Tetrachloride Solution",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Low-Purity Hafnium Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Magnesiumchloride Dust",
+        "amount": "6D"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Low-Purity Hafnium Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Iodine",
+        "amount": "4000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Hafnium Iodide Dust",
+        "amount": "5D"
+      }
+    ]
+  },
+  {
+    "name": "EBF",
+    "tier": "EV",
+    "circuit": 13,
+    "inputs": [
+      {
+        "name": "Hafnium Iodide Dust",
+        "amount": "45D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Hot Hafnium Ingot",
+        "amount": "9I"
+      },
+      {
+        "name": "Iodine",
+        "amount": "36000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Zirconia Dust",
+        "amount": "3D"
+      },
+      {
+        "name": "Hydrochloric Acid",
+        "amount": "4000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Zirconium Tetrachloride Dust",
+        "amount": "5D"
+      },
+      {
+        "name": "Water",
+        "amount": "2000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Zirconium Tetrachloride Dust",
+        "amount": "5D"
+      },
+      {
+        "name": "Water",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Zirconium Tetrachloride Solution",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "EBF",
+    "tier": "EV",
+    "circuit": 2,
+    "inputs": [
+      {
+        "name": "Zirconium Tetrachloride Solution",
+        "amount": "1000L"
+      },
+      {
+        "name": "Magnesium Dust",
+        "amount": "2D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Hot Zirconium Ingot",
+        "amount": "1I"
+      },
+      {
+        "name": "Magnesiumchloride Dust",
+        "amount": "6D"
       }
     ]
   }
