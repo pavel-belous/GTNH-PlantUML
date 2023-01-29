@@ -1,3 +1,4 @@
 @startuml
-!include machines/LCR.puml
+!include styles.puml
+'!include machines/LCR.puml
 @enduml

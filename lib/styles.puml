@@ -1,0 +1,20 @@
+@startuml
+scale 1
+'skinparam linetype polyline
+'skinparam linetype ortho
+left to right direction
+skinparam rectangle {
+    BackgroundColor<<HV>> #ADABBC
+    BackgroundColor<<EV>> #D79DE4
+    BackgroundColor<<IV>> #625D98
+}
+<style>
+    title {
+        HorizontalAlignment center
+    }
+</style>
+' line styles for marking input/output
+!$fromMainStorage = "#green;line.dotted;text:green : import"
+!$backToMainStorage = "#blue;line.dotted;text:blue : export"
+!$voided = "#red;line.dotted;text:red : void"
+@enduml

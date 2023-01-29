@@ -1,26 +1,10 @@
 @startuml
-scale 1
-'skinparam linetype polyline
-'skinparam linetype ortho
-left to right direction
-skinparam rectangle {
-    BackgroundColor<<HV>> #ADABBC
-    BackgroundColor<<EV>> #D79DE4
-    BackgroundColor<<IV>> #625D98
-}
-<style>
-    title {
-        HorizontalAlignment center
-    }
-</style>
+!include ../../lib/header.puml
 
 ' debug flag
 ' %true() - display ports names, useful for creating connections
 ' %false() - dont display port names
 !$DEBUG = %true()
-!$fromMainStorage = "#green;line.dotted;text:green : import"
-!$backToMainStorage = "#blue;line.dotted;text:blue : export"
-!$voided = "#red;line.dotted;text:red : void"
 
 '-----------Functions--------------------------------------------
 !function $getGTcircuitImage($circuitNo=0)
