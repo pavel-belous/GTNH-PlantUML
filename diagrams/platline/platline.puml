@@ -135,9 +135,6 @@ title
     IV-tier platinum processing line
 endtitle
 
-'header
-'endheader
-
 $drawMachines("platline.json")
 $drawConnections()
 $drawMarkers()

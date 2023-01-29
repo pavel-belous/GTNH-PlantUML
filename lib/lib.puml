@@ -80,18 +80,18 @@
                 $portInName --> $rectangleName: $input.name\n$input.amount
             !endfor
 
-            !foreach $output in $machine.outputs
-                !$outputNumber = $outputNumber + 1
-                !$portOutName = %string("po"+$outputNumber)
-                !if ($DEBUG)
-                    portout "$portOutName" as $portOutName
-                !else
-                    portout " " as $portOutName
-                !endif
-                $rectangleName #----> $portOutName: $output.name\n$output.amount
-            !endfor
-      }
-    !endfor
+                !foreach $output in $machine.outputs
+                    !$outputNumber = $outputNumber + 1
+                    !$portOutName = %string("po"+$outputNumber)
+                    !if ($DEBUG)
+                        portout "$portOutName" as $portOutName
+                    !else
+                        portout " " as $portOutName
+                    !endif
+                    $rectangleName #----> $portOutName: $output.name\n$output.amount
+                !endfor
+          }
+        !endfor
     rectangle machines [
         machines
         --

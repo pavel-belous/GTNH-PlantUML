@@ -1,0 +1,27 @@
+[
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Potassium Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "Sulfur Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "Oxygen",
+        "amount": "7000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Potassium Disulfate Dust",
+        "amount": "11D"
+      }
+    ]
+  }
+]
