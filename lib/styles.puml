@@ -3,6 +3,7 @@ scale 1
 'skinparam linetype polyline
 'skinparam linetype ortho
 left to right direction
+' tier style
 skinparam rectangle {
     BackgroundColor<<HV>> #ADABBC
     BackgroundColor<<EV>> #D79DE4
