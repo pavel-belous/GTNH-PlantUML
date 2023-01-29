@@ -1,4 +1,9 @@
 @startuml
+' debug flag
+' %true() - display ports names, useful for creating connections
+' %false() - dont display port names
+!$DEBUG = %true()
+
 !include styles.puml
 '!include machines/LCR.puml
 @enduml

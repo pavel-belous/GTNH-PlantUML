@@ -1,10 +1,7 @@
 @startuml
 !include ../../lib/header.puml
 
-' debug flag
-' %true() - display ports names, useful for creating connections
-' %false() - dont display port names
-!$DEBUG = %true()
+
 
 '-----------Functions--------------------------------------------
 !function $getGTcircuitImage($circuitNo=0)
