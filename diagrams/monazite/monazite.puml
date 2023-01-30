@@ -2,6 +2,46 @@
 !include ../../lib/header.puml
 
 !procedure $drawConnections()
+'samarium
+    po2 --> pi3
+    po3 --> pi6
+    po7 --> pi7
+    po12 --> pi9
+    po14 --> pi10
+    po13 --> pi13
+    po15 --> pi14
+    po14 --> pi15
+    po17 --> pi16
+    po18 --> pi17
+    po20 --> pi18
+    po21 --> pi20
+    po22 --> pi22
+    po23 --> pi23
+    po25 --> pi24
+    po26 --> pi25
+    po28 --> pi27
+    po29 --> pi30
+    po30 --> pi31
+'cerium
+    po24 --> pi32
+    po37 --> pi39
+    po34 --> pi38
+    po39 --> pi40
+    po41 --> pi42
+'hafnuim-zirconium blend
+    po4 --> pi43
+'hafnuim
+    po45 --> pi44
+    po47 --> pi46
+    po49 --> pi49
+    po50 --> pi50
+    po52 --> pi52
+'iodine cycle
+    po54 .-> pi51
+'zirconium
+    po46 --> pi53
+    po55 --> pi55
+    po57 --> pi57
 !endprocedure
 
 'import / export / void markers
