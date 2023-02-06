@@ -1,0 +1,21 @@
+@startuml
+!include ../../lib/header.puml
+
+!procedure $drawConnections()
+!endprocedure
+
+'import / export / void markers
+!procedure $drawMarkers()
+!endprocedure
+
+'-----------Draw Diagram Section---------------------------------
+title
+    Gregtech New Horizons 2.2.8
+    bastnasite processing line
+endtitle
+
+$drawMachines("bastnasite.json")
+$drawConnections()
+$drawMarkers()
+
+@enduml
