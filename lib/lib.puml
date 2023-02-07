@@ -41,6 +41,7 @@
     !$HVDissolutionTankCount = 0
     !$HVVacuumFreezerCount = 0
     !$EVElectromagneticSeparatorCount = 0
+    !$HVChemicalPlantCount = 0
     !$TotalMachinesCount = 0
     !foreach $machine in $machines
         !$machineNumber = $machineNumber + 1
@@ -92,6 +93,8 @@
             !$HVVacuumFreezerCount = $HVVacuumFreezerCount + 1
         !elseif ($countMachineName == "EV ElectromagneticSeparator")
             !$EVElectromagneticSeparatorCount = $EVElectromagneticSeparatorCount + 1
+        !elseif ($countMachineName == "HV ChemicalPlant")
+            !$HVChemicalPlantCount = $HVChemicalPlantCount + 1
         !endif
         rectangle " " as $fullMachineName {
             rectangle "$machine.name\n$getGTcircuitImage($circuit)" <<$tier>>  as $rectangleName  {
@@ -185,6 +188,9 @@
         !endif
         !if ($EVElectromagneticSeparatorCount>0)
         |   EV Electromagnetic Separator      |   $EVElectromagneticSeparatorCount|
+        !endif
+        !if ($HVChemicalPlantCount>0)
+        |   HV Chemical Plant      |   $HVChemicalPlantCount|
         !endif
         |   **total:** | ** $TotalMachinesCount **|
     ]
