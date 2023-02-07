@@ -22,6 +22,7 @@
     !$outputNumber = 0
     !$HVLCRCount = 0
     !$EVLCRCount = 0
+    !$IVLCRCount = 0
     !$HVEBFCount = 0
     !$EVEBFCount = 0
     !$HVElectroCount = 0
@@ -57,6 +58,8 @@
             !$HVLCRCount = $HVLCRCount + 1
         !elseif ($countMachineName == "EV LCR")
             !$EVLCRCount = $EVLCRCount + 1
+        !elseif ($countMachineName == "IV LCR")
+            !$IVLCRCount = $IVLCRCount + 1
         !elseif ($countMachineName == "HV EBF")
             !$HVEBFCount = $HVEBFCount + 1
         !elseif ($countMachineName == "EV EBF")
@@ -137,6 +140,9 @@
         !endif
         !if ($EVLCRCount>0)
         |   EV LCR                  |   $EVLCRCount|
+        !endif
+        !if ($IVLCRCount>0)
+        |   IV LCR                  |   $IVLCRCount|
         !endif
         !if ($HVEBFCount>0)
         |   HV EBF                  |   $HVEBFCount|
