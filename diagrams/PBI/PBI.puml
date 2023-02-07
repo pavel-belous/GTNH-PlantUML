@@ -2,6 +2,17 @@
 !include ../../lib/header.puml
 
 !procedure $drawConnections()
+    po1 --> pi4
+    po2 --> pi5
+    po4 --> pi9
+    po11 --> pi16
+    po12 --> pi19
+    po9 --> pi18
+    po13 --> pi20
+    po16 --> pi22
+    po8 --> pi24
+    po18 --> pi26
+    po5 --> pi25
 !endprocedure
 
 'import / export / void markers
