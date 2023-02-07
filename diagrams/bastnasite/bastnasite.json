@@ -1,26 +1,666 @@
 [
   {
-    "name": "Placeholder",
-    "tier": "HV",
+    "name": "Digester",
+    "tier": "EV",
     "circuit": 0,
     "inputs": [
       {
-        "name": "Input Placeholder 1",
-        "amount": "2D"
+        "name": "Crushed Bastnasite Ore",
+        "amount": "2"
       },
       {
-        "name": "Input Placeholder 1",
+        "name": "Nitric Acid",
         "amount": "700L"
       }
     ],
     "outputs": [
       {
-        "name": "Output Placeholder 1",
+        "name": "Silicon Dioxide Dust",
         "amount": "1D"
       },
       {
-        "name": "Output Placeholder 2",
+        "name": "Muddy Bastnasite Rare Earth Solution",
         "amount": "400L"
+      }
+    ]
+  },
+  {
+    "name": "OilCracker",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Muddy Bastnasite Rare Earth Solution",
+        "amount": "1000L"
+      },
+      {
+        "name": "Steam",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Steam-Cracked Bastnasite Mud",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 2,
+    "inputs": [
+      {
+        "name": "Fluorine",
+        "amount": "1L"
+      },
+      {
+        "name": "Hydrogen Gas",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Hydrofluoric Acid",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Raw Silicon Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Hydrofluoric Acid",
+        "amount": "6000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Hydrogen Gas",
+        "amount": "4000L"
+      },
+      {
+        "name": "Hexafluorosilic Acid",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Salt",
+        "amount": "4D"
+      },
+      {
+        "name": "Hexafluorosilic Acid",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Hydrochloric Acid",
+        "amount": "2000L"
+      },
+      {
+        "name": "Sodiumfluorosilicate",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "Mixer",
+    "tier": "HV",
+    "circuit": 6,
+    "inputs": [
+      {
+        "name": "Steam-Cracked Bastnasite Mud",
+        "amount": "1000L"
+      },
+      {
+        "name": "Sodiumfluorosilicate",
+        "amount": "320L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Conditioned Bastnasite Mud",
+        "amount": "1320L"
+      }
+    ]
+  },
+  {
+    "name": "DissolutionTank",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Saltpeter",
+        "amount": "1D"
+      },
+      {
+        "name": "Conditioned Bastnasite Mud",
+        "amount": "1000L"
+      },
+      {
+        "name": "Water",
+        "amount": "10000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Gangue Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Diluted Bastnasite Mud",
+        "amount": "11000L"
+      }
+    ]
+  },
+  {
+    "name": "Sifter",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Diluted Bastnasite Mud",
+        "amount": "2D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Silicon Dioxide Dust",
+        "amount": "1D, 90%"
+      },
+      {
+        "name": "Rutile Dust",
+        "amount": "1D, 75%"
+      },
+      {
+        "name": "Red Zircon Dust",
+        "amount": "1D, 10%"
+      },
+      {
+        "name": "Ilmenite Dust",
+        "amount": "1D, 5%"
+      },
+      {
+        "name": "Filtered Bastnasite Mud",
+        "amount": "400L"
+      }
+    ]
+  },
+  {
+    "name": "EBF",
+    "tier": "EV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Filtered Bastnasite Mud",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Bastnaside Rare Earh Oxides Dust",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "ChemicalBath",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Bastnaside Rare Earh Oxides Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Hydrochloric Acid",
+        "amount": "500L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Acid-Leached Bastnaside Rare Earh Oxides Dust",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "EBF",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Acid-Leached Bastnaside Rare Earh Oxides Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Oxygen Gas",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Roasted Rare Earh Oxides Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Fluorine",
+        "amount": "13L"
+      }
+    ]
+  },
+  {
+    "name": "Mixer",
+    "tier": "HV",
+    "circuit": 7,
+    "inputs": [
+      {
+        "name": "Roasted Rare Earh Oxides Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Water",
+        "amount": "200L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Wet Rare Earh Oxides Dust",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Wet Rare Earh Oxides Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Fluorine",
+        "amount": "4000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Cerium-Oxidised Rare Earh Oxides Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Hydrofluoric Acid",
+        "amount": "4000L"
+      }
+    ]
+  },
+  {
+    "name": "Centrifuge",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Cerium-Oxidised Rare Earh Oxides Dust",
+        "amount": "1D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Bastnaside Rarer Earth Oxides Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Cerium Dioxide Dust",
+        "amount": "1D, 90%"
+      }
+    ]
+  },
+  {
+    "name": "Mixer",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Bastnaside Rarer Earth Oxides Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Nitric Acid",
+        "amount": "400L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Nitrogenated Bastnaside Rarer Earth Oxides",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Nitrogenated Bastnaside Rarer Earth Oxides",
+        "amount": "1000L"
+      },
+      {
+        "name": "Acetone",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Bastnaside Rarer Earth Oxide Suspension",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "Centrifuge",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Bastnaside Rarer Earth Oxide Suspension",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Neodymium Rare Earth Concentrate Dust",
+        "amount": "1D, 80%"
+      },
+      {
+        "name": "Samaric Rare Earth Concentrate Dust",
+        "amount": "1D, 50%"
+      },
+      {
+        "name": "Diluted Acetone",
+        "amount": "750L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Neodymium Rare Earth Concentrate Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "Hydrochloric Acid",
+        "amount": "2000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Lanthanium Chloride Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Neodymium Oxide Dust",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "Electrolyzer",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Lanthanium Chloride Dust",
+        "amount": "4D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Lanthanum Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Chlorine",
+        "amount": "3000L"
+      }
+    ]
+  },
+  {
+    "name": "Electrolyzer",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Neodymium Oxide Dust",
+        "amount": "5D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Neodymium Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "Oxygen",
+        "amount": "3000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Samaric Rare Earth Concentrate Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Hydrofluoric Acid",
+        "amount": "2000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Fluorinated Samaric Concentrate Dust",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "EBF",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Fluorinated Samaric Concentrate Dust",
+        "amount": "8D"
+      },
+      {
+        "name": "Calcium Dust",
+        "amount": "4D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Holmium Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Samarium-Terbium Mixture Dust",
+        "amount": "4D"
+      },
+      {
+        "name": "Calcium Fluoride",
+        "amount": "12000L"
+      }
+    ]
+  },
+  {
+    "name": "FluidSolidifier",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Calcium Fluoride",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Calcium Fluoride Dust",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "ChemicalPlant",
+    "tier": "HV",
+    "circuit": 21,
+    "inputs": [
+      {
+        "name": "Ammonia",
+        "amount": "4000L"
+      },
+      {
+        "name": "Nitric Acid",
+        "amount": "4000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Hydrated Ammonium Nitrate Slurry",
+        "amount": "5184L"
+      }
+    ]
+  },
+  {
+    "name": "Dehydrator",
+    "tier": "HV",
+    "circuit": 8,
+    "inputs": [
+      {
+        "name": "Hydrated Ammonium Nitrate Slurry",
+        "amount": "144L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Ammonium Nitrate Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Water",
+        "amount": "250L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Samarium-Terbium Mixture Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Ammonium Nitrate Dust",
+        "amount": "9D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Nitrogenated Samarium-Terbium Mixture Dust",
+        "amount": "1D"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Nitrogenated Samarium-Terbium Mixture Dust",
+        "amount": "4D"
+      },
+      {
+        "name": "Copper Dust",
+        "amount": "1D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Terbium Nitrate Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "Samaric Residue Dust",
+        "amount": "2D"
+      }
+    ]
+  },
+  {
+    "name": "Electrolyzer",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Terbium Nitrate Dust",
+        "amount": "5D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Terbium Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Oxygen Gas",
+        "amount": "3000L"
+      },
+      {
+        "name": "Nitrogen Gas",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "Sifter",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Samaric Residue Dust",
+        "amount": "3D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Samarium Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "Gadolinium Dust",
+        "amount": "1D"
       }
     ]
   }
