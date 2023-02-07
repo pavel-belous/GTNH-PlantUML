@@ -1,26 +1,297 @@
 [
   {
-    "name": "Placeholder",
+    "name": "Mixer",
     "tier": "HV",
-    "circuit": 0,
+    "circuit": 1,
     "inputs": [
       {
-        "name": "Input Placeholder 1",
-        "amount": "2D"
+        "name": "Sulfuric Acid",
+        "amount": "1000L"
       },
       {
-        "name": "Input Placeholder 1",
-        "amount": "700L"
+        "name": "Nitric Acid",
+        "amount": "1000L"
       }
     ],
     "outputs": [
       {
-        "name": "Output Placeholder 1",
+        "name": "Nitration Mixture",
+        "amount": "2000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Chlorobenzene",
+        "amount": "1000L"
+      },
+      {
+        "name": "Nitration Mixture",
+        "amount": "2000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "2-Nitrochlorobenzene",
+        "amount": "1000L"
+      },
+      {
+        "name": "Diluted Sulfuric Acid",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "EV",
+    "circuit": 9,
+    "inputs": [
+      {
+        "name": "2-Nitrochlorobenzene",
+        "amount": "18000L"
+      },
+      {
+        "name": "Copper Dust",
+        "amount": "1D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "3,3-Dichlorobenzidine",
+        "amount": "9000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "IV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Zinc Dust",
         "amount": "1D"
       },
       {
-        "name": "Output Placeholder 2",
-        "amount": "400L"
+        "name": "Ammonia",
+        "amount": "2000L"
+      },
+      {
+        "name": "3,3-Dichlorobenzidine",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "3,3-Diaminobenzidine",
+        "amount": "1000L"
+      },
+      {
+        "name": "Hydrochloric Acid",
+        "amount": "2000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Chlorobenzene",
+        "amount": "1000L"
+      },
+      {
+        "name": "Water",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Diluted Hydrochloric Acid",
+        "amount": "1000L"
+      },
+      {
+        "name": "Phenol",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Potassium Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "Nitric Acid",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Potasium Nitrate Dust",
+        "amount": "5D"
+      },
+      {
+        "name": "Hydrogen Gas",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Chrome Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Oxygen Gas",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Chromium Dioxide Dust",
+        "amount": "3D"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Chromium Dioxide Dust",
+        "amount": "3D"
+      },
+      {
+        "name": "Oxygen Gas",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Chromium Trioxide Dust",
+        "amount": "4D"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Potasium Nitrate Dust",
+        "amount": "10D"
+      },
+      {
+        "name": "Chromium Trioxide Dust",
+        "amount": "8D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Potassium Dichromate Dust",
+        "amount": "11D"
+      },
+      {
+        "name": "Nitric Oxide",
+        "amount": "2000L"
+      },
+      {
+        "name": "Oxygen Gas",
+        "amount": "3000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Potassium Dichromate Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "1,2-Dimethylbenzen",
+        "amount": "9000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Phtalic Acid",
+        "amount": "9000L"
+      },
+      {
+        "name": "Water",
+        "amount": "18000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "IV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Phtalic Acid",
+        "amount": "1000L"
+      },
+      {
+        "name": "Sulfuric Acid",
+        "amount": "1000L"
+      },
+      {
+        "name": "Phenol",
+        "amount": "2000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Diphenyl Isophtalate",
+        "amount": "1000L"
+      },
+      {
+        "name": "Diluted Sulfuric Acid",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "IV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "3,3-Diaminobenzidine",
+        "amount": "1000L"
+      },
+      {
+        "name": "Diphenyl Isophtalate",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Phenol",
+        "amount": "2000L"
+      },
+      {
+        "name": "Molten Polybenzimidazole",
+        "amount": "1000L"
       }
     ]
   }
