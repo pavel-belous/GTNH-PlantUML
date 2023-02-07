@@ -34,6 +34,7 @@
     !$HVMixerCount = 0
     !$HVOilCrackerCount = 0
     !$HVFluidExtractorCount = 0
+    !$HVCentrifugeCount = 0
     !$EVCentrifugeCount = 0
     !$HVChemicalBathCount = 0
     !$HVDigesterCount = 0
@@ -80,6 +81,8 @@
             !$HVOilCrackerCount = $HVOilCrackerCount + 1
         !elseif ($countMachineName == "HV FluidExtractor")
             !$HVFluidExtractorCount = $HVFluidExtractorCount + 1
+        !elseif ($countMachineName == "HV Centrifuge")
+            !$HVCentrifugeCount = $HVCentrifugeCount + 1
         !elseif ($countMachineName == "EV Centrifuge")
             !$EVCentrifugeCount = $EVCentrifugeCount + 1
         !elseif ($countMachineName == "HV ChemicalBath")
@@ -170,6 +173,9 @@
         !endif
         !if ($HVFluidExtractorCount>0)
         |   HV Fluid Extractor      |   $HVFluidExtractorCount|
+        !endif
+        !if ($HVCentrifugeCount>0)
+        |   HV Centrifuge      |   $HVCentrifugeCount|
         !endif
         !if ($EVCentrifugeCount>0)
         |   EV Centrifuge      |   $EVCentrifugeCount|
