@@ -19,6 +19,6 @@ skinparam rectangle {
 !$backToMainStorage = "#blue;line.dotted;text:blue : export"
 !$voided = "#red;line.dotted;text:red : void"
 left header
-<font color=black>source:</font> https://github.com/pavel-belous/GTNH-PlanthUML
+<font color=black>source:</font> https://github.com/pavel-belous/GTNH-PlantUML
 endheader
 @enduml
