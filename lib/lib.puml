@@ -48,6 +48,7 @@
     !$HVDehydratorCount = 0
     !$EVDistillationTowerCount = 0
     !$EVNeutronActivatorCount = 0
+    !$EVAutoclaveCount = 0
     !$TotalMachinesCount = 0
     !foreach $machine in $machines
         !$machineNumber = $machineNumber + 1
@@ -113,6 +114,8 @@
             !$EVDistillationTowerCount = $EVDistillationTowerCount + 1
         !elseif ($countMachineName == "EV NeutronActivator")
             !$EVNeutronActivatorCount = $EVNeutronActivatorCount + 1
+        !elseif ($countMachineName == "EV Autoclave")
+            !$EVAutoclaveCount = $EVAutoclaveCount + 1
         !endif
         rectangle " " as $fullMachineName {
             rectangle "$machine.name\n$getGTcircuitImage($circuit)" <<$tier>>  as $rectangleName  {
@@ -227,6 +230,9 @@
         !endif
         !if ($EVNeutronActivatorCount>0)
         |   EV Neutron Activator      |   $EVNeutronActivatorCount|
+        !endif
+        !if ($EVAutoclaveCount>0)
+        |   EV Autoclave      |   $EVAutoclaveCount|
         !endif
         |   **total:** | ** $TotalMachinesCount **|
     ]
