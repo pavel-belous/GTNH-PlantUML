@@ -26,6 +26,7 @@
     !$HVEBFCount = 0
     !$EVEBFCount = 0
     !$HVElectroCount = 0
+    !$EVElectroCount = 0
     !$HVDTCount = 0
     !$IVDTCount = 0
     !$HVSifterCount = 0
@@ -68,6 +69,8 @@
             !$EVEBFCount = $EVEBFCount + 1
         !elseif ($countMachineName == "HV Electrolyzer")
             !$HVElectroCount = $HVElectroCount + 1
+        !elseif ($countMachineName == "EV Electrolyzer")
+            !$EVElectroCount = $EVElectroCount + 1
         !elseif ($countMachineName == "HV DT")
             !$HVDTCount = $HVDTCount + 1
         !elseif ($countMachineName == "IV DT")
@@ -158,6 +161,9 @@
         !endif
         !if ($HVElectroCount>0)
         |   HV Electrolyzer         |   $HVElectroCount|
+        !endif
+        !if ($EVElectroCount>0)
+        |   EV Electrolyzer         |   $EVElectroCount|
         !endif
         !if ($HVDTCount>0)
         |   HV DT                   |   $HVDTCount|
