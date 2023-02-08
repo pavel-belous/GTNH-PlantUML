@@ -1,26 +1,451 @@
 [
   {
-    "name": "Placeholder",
-    "tier": "HV",
-    "circuit": 0,
+    "name": "LCR",
+    "tier": "EV",
+    "circuit": 2,
     "inputs": [
       {
-        "name": "Input Placeholder 1",
-        "amount": "2D"
+        "name": "Ethanol",
+        "amount": "1000L"
       },
       {
-        "name": "Input Placeholder 1",
-        "amount": "700L"
+        "name": "Sulfuric Acid",
+        "amount": "1000L"
       }
     ],
     "outputs": [
       {
-        "name": "Output Placeholder 1",
+        "name": "Ether",
+        "amount": "500L"
+      },
+      {
+        "name": "Diluted Sulfuric Acid",
+        "amount": "1500L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "EV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Antimony Dust",
         "amount": "1D"
       },
       {
-        "name": "Output Placeholder 2",
+        "name": "Ether",
+        "amount": "500L"
+      },
+      {
+        "name": "Chlorine",
+        "amount": "3000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Antimony Trichloride Solution",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "EV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Antimony Trichloride Solution",
+        "amount": "1000L"
+      },
+      {
+        "name": "Chlorine",
+        "amount": "2000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Antimony Pentachloride Solution",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "DistillationTower",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Antimony Pentachloride Solution",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Ether",
+        "amount": "1000L"
+      },
+      {
+        "name": "Antimony Pentachloride",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "EV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Antimony Pentachloride",
+        "amount": "1000L"
+      },
+      {
+        "name": "Hydrofluoric Acid",
+        "amount": "5000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Antimony Pentafluoride",
+        "amount": "1000L"
+      },
+      {
+        "name": "Hydrochloric Acid",
+        "amount": "5000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "EV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Antimony Pentafluoride",
+        "amount": "1000L"
+      },
+      {
+        "name": "Hydrofluoric Acid",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Fluoroantimonic Acid",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "EBF",
+    "tier": "EV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Naquadah Oxide Mixture Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Fluoroantimonic Acid",
+        "amount": "1500L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Titanium Trifluoride Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Low Quality Naquadah Emulsion",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "EBF",
+    "tier": "EV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Titanium Trifluoride Dust",
+        "amount": "4D"
+      },
+      {
+        "name": "Hydrogen Gas",
+        "amount": "3000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Hot Titanium Ingot",
+        "amount": "1I"
+      },
+      {
+        "name": "Hydrofluoric Acid",
+        "amount": "3000L"
+      }
+    ]
+  },
+  {
+    "name": "Centrifuge",
+    "tier": "EV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Sodium Hydroxide Dust",
+        "amount": "27D"
+      },
+      {
+        "name": "Low Quality Naquadah Emulsion",
+        "amount": "10000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Gallium Hydroxide Dust",
+        "amount": "112D, 62.5%"
+      },
+      {
+        "name": "Antimony Dust",
+        "amount": "15D"
+      },
+      {
+        "name": "Low Quality Naquadah Solution",
+        "amount": "9000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Gallium Hydroxide Dust",
+        "amount": "7D"
+      },
+      {
+        "name": "Sodium Dust",
+        "amount": "3D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Gallium Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Sodium Hydroxide Dust",
+        "amount": "9D"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Copper Plat",
+        "amount": "1, NC"
+      },
+      {
+        "name": "Hydrogen Gas",
+        "amount": "8000L"
+      },
+      {
+        "name": "Seed Oil",
+        "amount": "3000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "2-Ethyl-1-Hexanol",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Sodium Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "2-Ethyl-1-Hexanol",
+        "amount": "2000L"
+      },
+      {
+        "name": "Phosphoric Acid",
+        "amount": "1000L"
+      },
+      {
+        "name": "Ethanol",
+        "amount": "200DL"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "P-507",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "P-507",
+        "amount": "4000L"
+      },
+      {
+        "name": "Low Quality Naquadah Solution",
+        "amount": "36000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Fluorine-Rich Waste Liquid",
+        "amount": "10000L"
+      },
+      {
+        "name": "Naquadah-Adamantium Solution",
+        "amount": "30000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Quicklime",
+        "amount": "40D"
+      },
+      {
+        "name": "Fluorine-Rich Waste Liquid",
+        "amount": "1500L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Fluorspar Dust",
+        "amount": "60D"
+      },
+      {
+        "name": "Waste Liquid",
         "amount": "400L"
+      }
+    ]
+  },
+  {
+    "name": "DistillationTower",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Waste Liquid",
+        "amount": "10000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Chrome Dust",
+        "amount": "3D"
+      },
+      {
+        "name": "Salt Water",
+        "amount": "3000L"
+      },
+      {
+        "name": "Phenol",
+        "amount": "2000L"
+      },
+      {
+        "name": "Hydrochloric Acid",
+        "amount": "5000L"
+      }
+    ]
+  },
+  {
+    "name": "Electrolyzer",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Fluorspar",
+        "amount": "3D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Calcium Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Fluorine",
+        "amount": "2000L"
+      }
+    ]
+  },
+  {
+    "name": "NeutronActivator",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Naquadah-Adamantium Solution",
+        "amount": "3000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Adamantine Dust",
+        "amount": "4D"
+      },
+      {
+        "name": "Naquadah Oxide Mixture Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "Concentrated Enriched-Naquadah Sludge Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Naquadah-Rich Solution",
+        "amount": "2000L"
+      }
+    ]
+  },
+  {
+    "name": "Autoclave",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Sodium Hydroxide Dust",
+        "amount": "27D"
+      },
+      {
+        "name": "Naquadah-Rich Solution",
+        "amount": "5000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Naquadahine Dust",
+        "amount": "30D"
+      },
+      {
+        "name": "P-507",
+        "amount": "1000L"
       }
     ]
   }
