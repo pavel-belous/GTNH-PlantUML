@@ -11,7 +11,7 @@
 '-----------Draw Diagram Section---------------------------------
 title
     Gregtech New Horizons 2.2.8
-    rocket fuels processing line
+    rocket fuels processing line, IV tier, up to T6 rocket
 endtitle
 
 $drawMachines("rocket-fuels.json")
