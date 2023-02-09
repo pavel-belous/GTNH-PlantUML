@@ -2,6 +2,21 @@
 !include ../../lib/header.puml
 
 !procedure $drawConnections()
+    po1 --> pi3
+    po2 --> pi4
+    po4 --> pi7
+    po5 --> pi9
+    po6 --> pi10
+    po7 --> pi11
+    po8 ...> pi14 : recycled input,\nonly 5000L needed to start
+    po9 ----> pi17
+    po10 ..> pi14 : recycled
+    po11 --> pi19
+    po12 --> pi21
+    po13 --> po13 : T3-T4 rocket fuel
+    po12 --> pi25
+    po14 --> pi26
+    po15 --> po15 : T5-T6 rocket fuel
 !endprocedure
 
 'import / export / void markers
