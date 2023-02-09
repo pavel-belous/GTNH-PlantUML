@@ -1,0 +1,1 @@
+magick "*.png" -set filename:base "%[basename]" -scale 200% "./upscale/%[filename:base].png"
