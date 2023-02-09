@@ -117,6 +117,7 @@
     "name": "Dehydrator",
     "tier": "HV",
     "circuit": 15,
+    "circuitType": "bio",
     "inputs": [
       {
         "name": "Phtalic Acid",
