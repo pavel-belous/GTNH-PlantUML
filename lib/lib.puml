@@ -21,6 +21,34 @@
    !return $result
 !endfunction
 
+'returns string witn GT++ Chemical Plant tier description
+!function $getChemPlantTier($tier=0)
+    !$result = ""
+        !if ($tier > 0)
+            !$result = "Tier: " + $tier + ";\nMachine Casings: "
+            !$tierMaterial = "unsupported"
+            !if ($tier == 1)
+                !$tierMaterial = "Strong Bronze"
+            !elseif ($tier == 2)
+                !$tierMaterial = "Solid Steel"
+            !elseif ($tier == 3)
+                !$tierMaterial = "Sturdy Alliminium"
+            !elseif ($tier == 4)
+                !$tierMaterial = "Clean Stainless"
+            !elseif ($tier == 5)
+                !$tierMaterial = "Stable Titanium"
+            !elseif ($tier == 6)
+                !$tierMaterial = "Robust Tungstensteel"
+            !elseif ($tier == 7)
+                !$tierMaterial = "Vigorous Laurenium"
+            !elseif ($tier == 8)
+                !$tierMaterial = "Rugged Botmium"
+            !endif
+            !$result = $result + $tierMaterial
+        !endif
+    !return %string($result)
+!endfunction
+
 '-----------Procedures-------------------------------------------
 
 ' Draws machines and their inputs/outputs using array from .json file.
@@ -72,6 +100,7 @@
         !$TotalMachinesCount = $TotalMachinesCount + 1
         !$fullMachineName = $machine.name + $machineNumber
         !$tier = $machine.tier
+        !$chemPlantTier = $machine.chemPlantTier
         !$circuit = $machine.circuit
         !$circuitType = $machine.circuitType
         !$rectangleName = %string("rec"+$fullMachineName)
@@ -135,8 +164,15 @@
         !elseif ($countMachineName == "EV Autoclave")
             !$EVAutoclaveCount = $EVAutoclaveCount + 1
         !endif
+        !$rectangleVisibleName = $machine.name
+        !if ($circuit > 0)
+            !$rectangleVisibleName = $rectangleVisibleName + "\n" + $getGTcircuitImage($circuit, $circuitType)
+        !endif
+        !if ($chemPlantTier > 0)
+            !$rectangleVisibleName = $rectangleVisibleName + "\n" + $getChemPlantTier($chemPlantTier)
+        !endif
         rectangle " " as $fullMachineName {
-            rectangle "$machine.name\n$getGTcircuitImage($circuit, $circuitType)" <<$tier>>  as $rectangleName  {
+            rectangle "$rectangleVisibleName" <<$tier>>  as $rectangleName  {
             }
             !foreach $input in $machine.inputs
                 !$inputNumber = $inputNumber + 1
