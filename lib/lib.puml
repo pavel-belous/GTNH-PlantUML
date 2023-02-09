@@ -24,24 +24,24 @@
 'returns string witn GT++ Chemical Plant tier description
 !function $getChemPlantTier($tier=0)
     !$result = ""
-        !if ($tier > 0)
+        !if ($tier >= 0)
             !$result = "Tier: " + $tier + ";\nMachine Casings: "
             !$tierMaterial = "unsupported"
-            !if ($tier == 1)
+            !if ($tier == 0)
                 !$tierMaterial = "Strong Bronze"
-            !elseif ($tier == 2)
+            !elseif ($tier == 1)
                 !$tierMaterial = "Solid Steel"
-            !elseif ($tier == 3)
+            !elseif ($tier == 2)
                 !$tierMaterial = "Sturdy Alliminium"
+            !elseif ($tier == 3)
+                !$tierMaterial = "Clean Stainless Steel"
             !elseif ($tier == 4)
-                !$tierMaterial = "Clean Stainless"
-            !elseif ($tier == 5)
                 !$tierMaterial = "Stable Titanium"
-            !elseif ($tier == 6)
+            !elseif ($tier == 5)
                 !$tierMaterial = "Robust Tungstensteel"
-            !elseif ($tier == 7)
+            !elseif ($tier == 6)
                 !$tierMaterial = "Vigorous Laurenium"
-            !elseif ($tier == 8)
+            !elseif ($tier == 7)
                 !$tierMaterial = "Rugged Botmium"
             !endif
             !$result = $result + $tierMaterial
@@ -168,7 +168,7 @@
         !if ($circuit > 0)
             !$rectangleVisibleName = $rectangleVisibleName + "\n" + $getGTcircuitImage($circuit, $circuitType)
         !endif
-        !if ($chemPlantTier > 0)
+        !if ($chemPlantTier >= 0)
             !$rectangleVisibleName = $rectangleVisibleName + "\n" + $getChemPlantTier($chemPlantTier)
         !endif
         rectangle " " as $fullMachineName {
