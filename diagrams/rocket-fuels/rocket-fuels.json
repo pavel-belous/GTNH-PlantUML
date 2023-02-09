@@ -1,26 +1,295 @@
 [
   {
-    "name": "Placeholder",
+    "name": "Distillery",
     "tier": "HV",
-    "circuit": 0,
+    "circuit": 23,
     "inputs": [
       {
-        "name": "Input Placeholder 1",
-        "amount": "2D"
-      },
-      {
-        "name": "Input Placeholder 1",
-        "amount": "700L"
+        "name": "Kerosene",
+        "amount": "20L"
       }
     ],
     "outputs": [
       {
-        "name": "Output Placeholder 1",
+        "name": "RP-1",
+        "amount": "15L"
+      }
+    ]
+  },
+  {
+    "name": "Freezer",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Oxygen Gas",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Liquid Oxygen",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "ChemicalPlant",
+    "tier": "HV",
+    "circuit": 1,
+    "inputs": [
+      {
+        "name": "Liquid Oxygen",
+        "amount": "1000L"
+      },
+      {
+        "name": "RP-1",
+        "amount": "500L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "RP-1 Rocket Fuel",
+        "amount": "1500L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Coal Tar Oil",
+        "amount": "8000L"
+      },
+      {
+        "name": "Sulfuric Acid",
+        "amount": "8000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Sulfuric Coal Tar Oil",
+        "amount": "16000L"
+      }
+    ]
+  },
+  {
+    "name": "Distillery",
+    "tier": "HV",
+    "circuit": 6,
+    "inputs": [
+      {
+        "name": "Sulfuric Coal Tar Oil",
+        "amount": "20L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Naphtalene",
+        "amount": "20L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Lithium",
+        "amount": "5D"
+      },
+      {
+        "name": "Naphtalene",
+        "amount": "2000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Phtalic Acid",
+        "amount": "2500L"
+      }
+    ]
+  },
+  {
+    "name": "Dehydrator",
+    "tier": "HV",
+    "circuit": 15,
+    "inputs": [
+      {
+        "name": "Phtalic Acid",
+        "amount": "200L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Phtalic Anhydride Dust",
+        "amount": "3D"
+      }
+    ]
+  },
+  {
+    "name": "ChemicalPlant",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Phtalic Anhydride Dust",
+        "amount": "15D"
+      },
+      {
+        "name": "Ethylbenzene",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "2-Ethylanthraquinone",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "ChemicalPlant",
+    "tier": "HV",
+    "circuit": 4,
+    "inputs": [
+      {
+        "name": "Orange Metal Catalyst",
+        "amount": "1"
+      },
+      {
+        "name": "2-Ethylanthraquinone",
+        "amount": "1000L"
+      },
+      {
+        "name": "Hydrogen Gas",
+        "amount": "2000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "2-Ethylanthrahydroquinone",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "ChemicalPlant",
+    "tier": "HV",
+    "circuit": 4,
+    "inputs": [
+      {
+        "name": "Oxygen Gas",
+        "amount": "10000L"
+      },
+      {
+        "name": "2-Ethylanthrahydroquinone",
+        "amount": "5000L"
+      },
+      {
+        "name": "Anthracene",
+        "amount": "20L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "2-Ethylanthraquinone",
+        "amount": "5000L"
+      },
+      {
+        "name": "Hydrogen Peroxide",
+        "amount": "5000L"
+      }
+    ]
+  },
+  {
+    "name": "ChemicalPlant",
+    "tier": "HV",
+    "circuit": 21,
+    "inputs": [
+      {
+        "name": "Hydrogen Peroxide",
+        "amount": "1000L"
+      },
+      {
+        "name": "Ammonia",
+        "amount": "2000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Hydrazine",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "ChemicalPlant",
+    "tier": "HV",
+    "circuit": 2,
+    "inputs": [
+      {
+        "name": "Hydrazine",
+        "amount": "4000L"
+      },
+      {
+        "name": "Methanol",
+        "amount": "6000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Dense Hydrazine",
+        "amount": "10000L"
+      }
+    ]
+  },
+  {
+    "name": "ChemicalPlant",
+    "tier": "HV",
+    "circuit": 21,
+    "inputs": [
+      {
+        "name": "Carbon Dust",
         "amount": "1D"
       },
       {
-        "name": "Output Placeholder 2",
-        "amount": "400L"
+        "name": "Hydrogen Gas",
+        "amount": "2000L"
+      },
+      {
+        "name": "Hydrazine",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Monomethylhydrazine",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "ChemicalPlant",
+    "tier": "HV",
+    "circuit": 3,
+    "inputs": [
+      {
+        "name": "Monomethylhydrazine",
+        "amount": "2000L"
+      },
+      {
+        "name": "Nitric Acid",
+        "amount": "1000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "CN3H7O3",
+        "amount": "2000L"
       }
     ]
   }
