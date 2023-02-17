@@ -2,10 +2,10 @@
 !include ../../lib/header.puml
 
 !procedure $drawConnections()
-    po1 --> pi4
+    po1 --> pi4 : recycled,\n1000L to start
     po3 --> pi6
     po4 --> pi8
-    po5 ..> pi4
+    po5 ..> pi4 : recycled
     po6 --> pi9
     po7 --> pi11
     po9 --> pi14
@@ -14,7 +14,7 @@
     po14 --> pi19
     po16 --> pi29
     po19 --> pi25
-    po20 --> pi28
+    po20 --> pi28 : recycled,\n4000L to start
     po21 --> pi31
     po24 --> pi32
     po23 --> pi33
