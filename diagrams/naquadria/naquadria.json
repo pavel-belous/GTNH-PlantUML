@@ -50,7 +50,7 @@
     ]
   },
   {
-    "name": "Neutron Activator",
+    "name": "NeutronActivator",
     "tier": "EV",
     "circuit": 0,
     "inputs": [
