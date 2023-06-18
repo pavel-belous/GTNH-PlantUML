@@ -108,16 +108,16 @@
     ],
     "outputs": [
       {
-        "name": "Magnesium Dust",
-        "amount": "1D"
-      },
-      {
         "name": "Sulfur Dust",
         "amount": "1D"
       },
       {
         "name": "Oxygen Gas",
         "amount": "4000L"
+      },
+      {
+        "name": "Magnesium Dust",
+        "amount": "1D"
       }
     ]
   },
@@ -127,16 +127,16 @@
     "circuit": 0,
     "inputs": [
       {
+        "name": "P-507",
+        "amount": "500L"
+      },
+      {
         "name": "Low Quality Naquadria Sulphate Dust",
         "amount": "3D"
       },
       {
         "name": "Water",
         "amount": "3000L"
-      },
-      {
-        "name": "P-507",
-        "amount": "500L"
       }
     ],
     "outputs": [
@@ -162,16 +162,16 @@
         "amount": "2D"
       },
       {
-        "name": "P-507",
-        "amount": "1000L"
-      },
-      {
         "name": "Naquadria-Rich Solution",
         "amount": "5400L"
       },
       {
         "name": "Diluted Sulfuric Acid",
         "amount": "12000L"
+      },
+      {
+        "name": "P-507",
+        "amount": "1000L"
       }
     ]
   }
