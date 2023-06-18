@@ -11,7 +11,7 @@
 '-----------Draw Diagram Section---------------------------------
 title
     Gregtech New Horizons 2.3.4
-    enriched naquadah processing line
+    naquadria processing line
 endtitle
 
 $drawMachines("naquadria.json")

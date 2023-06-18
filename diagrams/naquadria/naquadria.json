@@ -1,26 +1,177 @@
 [
   {
-    "name": "Placeholder",
-    "tier": "HV",
+    "name": "Centrifuge",
+    "tier": "ZPM",
     "circuit": 0,
     "inputs": [
       {
-        "name": "Input Placeholder 1",
+        "name": "Naquadria Oxide Mixture Dust",
         "amount": "2D"
       },
       {
-        "name": "Input Placeholder 1",
-        "amount": "700L"
+        "name": "Phosphoric Acid",
+        "amount": "2000L"
       }
     ],
     "outputs": [
       {
-        "name": "Output Placeholder 1",
+        "name": "Indium Phosphate Dust",
+        "amount": "3D, 20%"
+      },
+      {
+        "name": "Low Quality Naquadria Phosphate Dust",
+        "amount": "2D"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "IV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Low Quality Naquadria Phosphate Dust",
+        "amount": "10D"
+      },
+      {
+        "name": "Sulfuric Acid",
+        "amount": "30000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Barite Dust",
         "amount": "1D"
       },
       {
-        "name": "Output Placeholder 2",
-        "amount": "400L"
+        "name": "Naquadria-Rich Solution",
+        "amount": "9000L"
+      }
+    ]
+  },
+  {
+    "name": "Neutron Activator",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Naquadria-Rich Solution",
+        "amount": "9000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Naquadria Sulphate Dust",
+        "amount": "44D"
+      },
+      {
+        "name": "Low Quality Naquadria Sulphate Dust",
+        "amount": "6D"
+      }
+    ]
+  },
+  {
+    "name": "EBF",
+    "tier": "ZPM",
+    "circuit": 0,
+    "coil": "Electrum Flux",
+    "inputs": [
+      {
+        "name": "Naquadria Sulphate Dust",
+        "amount": "11D"
+      },
+      {
+        "name": "Magnesium Dist",
+        "amount": "2D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Hot Naquadria Ingot",
+        "amount": "1I"
+      },
+      {
+        "name": "Magnesium Sulfate Dust",
+        "amount": "12D"
+      }
+    ]
+  },
+  {
+    "name": "Electrolyzer",
+    "tier": "MV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Magnesium Sulfate Dust",
+        "amount": "6D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Magnesium Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Sulfur Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Oxygen Gas",
+        "amount": "4000L"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "EV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Low Quality Naquadria Sulphate Dust",
+        "amount": "3D"
+      },
+      {
+        "name": "Water",
+        "amount": "3000L"
+      },
+      {
+        "name": "P-507",
+        "amount": "500L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Low Quality Naquadria Sulphate",
+        "amount": "3500L"
+      }
+    ]
+  },
+  {
+    "name": "DistillationTower",
+    "tier": "IV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Low Quality Naquadria Sulphate",
+        "amount": "7000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Enriched-Naquadah Oxide Mixture Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "P-507",
+        "amount": "1000L"
+      },
+      {
+        "name": "Naquadria-Rich Solution",
+        "amount": "5400L"
+      },
+      {
+        "name": "Diluted Sulfuric Acid",
+        "amount": "12000L"
       }
     ]
   }
