@@ -70,6 +70,7 @@
     !$IVLCRCount = 0
     !$HVEBFCount = 0
     !$EVEBFCount = 0
+    !$ZPMEBFCount = 0
     !$HVElectroCount = 0
     !$EVElectroCount = 0
     !$HVDTCount = 0
@@ -115,6 +116,8 @@
             !$HVEBFCount = $HVEBFCount + 1
         !elseif ($countMachineName == "EV EBF")
             !$EVEBFCount = $EVEBFCount + 1
+        !elseif ($countMachineName == "ZPM EBF")
+            !$ZPMEBFCount = $ZPMEBFCount + 1
         !elseif ($countMachineName == "HV Electrolyzer")
             !$HVElectroCount = $HVElectroCount + 1
         !elseif ($countMachineName == "EV Electrolyzer")
@@ -215,6 +218,9 @@
         !endif
         !if ($EVEBFCount>0)
         |   EV EBF                  |   $EVEBFCount|
+        !endif
+        !if ($ZPMEBFCount>0)
+        |   ZPM EBF                  |   $ZPMEBFCount|
         !endif
         !if ($HVElectroCount>0)
         |   HV Electrolyzer         |   $HVElectroCount|
