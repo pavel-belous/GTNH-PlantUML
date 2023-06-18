@@ -5,9 +5,11 @@ scale 1
 left to right direction
 ' tier style
 skinparam rectangle {
+    BackgroundColor<<MV>> #82BEDF
     BackgroundColor<<HV>> #ADABBC
     BackgroundColor<<EV>> #D79DE4
     BackgroundColor<<IV>> #625D98
+    BackgroundColor<<ZPM>> #979797
 }
 <style>
     title {
