@@ -174,5 +174,30 @@
         "amount": "1000L"
       }
     ]
+  },
+  {
+    "name": "LCR",
+    "tier": "LV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Indium Phospate Dust",
+        "amount": "12D"
+      },
+      {
+        "name": "Calcium Dust",
+        "amount": "3D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Indium Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "Tricalcium Phosphate Dust",
+        "amount": "5D"
+      }
+    ]
   }
 ]

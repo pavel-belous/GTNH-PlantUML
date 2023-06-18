@@ -8,6 +8,7 @@
    po8 --> pi8
    po6 --> pi9
    po12 --> pi12
+   po1 ---> pi13
    po16 ..> pi9
    po11 -left..> pi7
 !endprocedure
