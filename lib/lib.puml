@@ -106,6 +106,7 @@
         !$tier = $machine.tier
         !$chemPlantTier = $machine.chemPlantTier
         !$circuit = $machine.circuit
+        !$coil = $machine.coil
         !$circuitType = $machine.circuitType
         !$rectangleName = %string("rec"+$fullMachineName)
         !$countMachineName = $tier + " " + $machine.name
@@ -182,6 +183,9 @@
         !endif
         !if ($chemPlantTier >= 0)
             !$rectangleVisibleName = $rectangleVisibleName + "\n" + $getChemPlantTier($chemPlantTier)
+        !endif
+        !if ($coil >= 0)
+            !$rectangleVisibleName = $rectangleVisibleName + "\n Coil: " + $coil
         !endif
         rectangle " " as $fullMachineName {
             rectangle "$rectangleVisibleName" <<$tier>>  as $rectangleName  {
