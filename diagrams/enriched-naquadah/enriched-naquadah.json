@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Placeholder",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Input Placeholder 1",
+        "amount": "2D"
+      },
+      {
+        "name": "Input Placeholder 1",
+        "amount": "700L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Output Placeholder 1",
+        "amount": "1D"
+      },
+      {
+        "name": "Output Placeholder 2",
+        "amount": "400L"
+      }
+    ]
+  }
+]
