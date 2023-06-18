@@ -93,6 +93,7 @@
     !$HVChemicalPlantCount = 0
     !$HVDehydratorCount = 0
     !$EVDistillationTowerCount = 0
+    !$IVDistillationTowerCount = 0
     !$EVNeutronActivatorCount = 0
     !$EVAutoclaveCount = 0
     !$TotalMachinesCount = 0
@@ -162,6 +163,8 @@
             !$HVDehydratorCount = $HVDehydratorCount + 1
         !elseif ($countMachineName == "EV DistillationTower")
             !$EVDistillationTowerCount = $EVDistillationTowerCount + 1
+        !elseif ($countMachineName == "IV DistillationTower")
+            !$IVDistillationTowerCount = $IVDistillationTowerCount + 1
         !elseif ($countMachineName == "EV NeutronActivator")
             !$EVNeutronActivatorCount = $EVNeutronActivatorCount + 1
         !elseif ($countMachineName == "EV Autoclave")
@@ -287,6 +290,9 @@
         !endif
         !if ($EVDistillationTowerCount>0)
         |   EV Distillation Tower      |   $EVDistillationTowerCount|
+        !endif
+        !if ($IVDistillationTowerCount>0)
+        |   IV Distillation Tower      |   $IVDistillationTowerCount|
         !endif
         !if ($EVNeutronActivatorCount>0)
         |   EV Neutron Activator      |   $EVNeutronActivatorCount|
