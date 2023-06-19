@@ -102,6 +102,7 @@
     !$IVLCRCount = 0
     !$HVEBFCount = 0
     !$EVEBFCount = 0
+    !$IVEBFCount = 0
     !$ZPMEBFCount = 0
     !$MVElectroCount = 0
     !$HVElectroCount = 0
@@ -129,7 +130,9 @@
     !$EVDistillationTowerCount = 0
     !$IVDistillationTowerCount = 0
     !$EVNeutronActivatorCount = 0
+    !$IVNeutronActivatorCount = 0
     !$EVAutoclaveCount = 0
+    !$IVAutoclaveCount = 0
     !$TotalMachinesCount = 0
     !foreach $machine in $machines
         !$machineNumber = $machineNumber + 1
@@ -152,6 +155,8 @@
             !$HVEBFCount = $HVEBFCount + 1
         !elseif ($countMachineName == "EV EBF")
             !$EVEBFCount = $EVEBFCount + 1
+        !elseif ($countMachineName == "IV EBF")
+            !$IVEBFCount = $IVEBFCount + 1
         !elseif ($countMachineName == "ZPM EBF")
             !$ZPMEBFCount = $ZPMEBFCount + 1
         !elseif ($countMachineName == "MV Electrolyzer")
@@ -206,8 +211,12 @@
             !$IVDistillationTowerCount = $IVDistillationTowerCount + 1
         !elseif ($countMachineName == "EV NeutronActivator")
             !$EVNeutronActivatorCount = $EVNeutronActivatorCount + 1
+        !elseif ($countMachineName == "IV NeutronActivator")
+            !$IVNeutronActivatorCount = $IVNeutronActivatorCount + 1
         !elseif ($countMachineName == "EV Autoclave")
             !$EVAutoclaveCount = $EVAutoclaveCount + 1
+        !elseif ($countMachineName == "IV Autoclave")
+            !$IVAutoclaveCount = $IVAutoclaveCount + 1
         !endif
         !$rectangleVisibleName = $machine.name
         !if ($circuit > 0)
@@ -265,6 +274,9 @@
         !endif
         !if ($EVEBFCount>0)
         |   EV EBF                  |   $EVEBFCount|
+        !endif
+        !if ($IVEBFCount>0)
+        |   IV EBF                  |   $IVEBFCount|
         !endif
         !if ($ZPMEBFCount>0)
         |   ZPM EBF                  |   $ZPMEBFCount|
@@ -347,8 +359,14 @@
         !if ($EVNeutronActivatorCount>0)
         |   EV Neutron Activator      |   $EVNeutronActivatorCount|
         !endif
+        !if ($IVNeutronActivatorCount>0)
+        |   IV Neutron Activator      |   $IVNeutronActivatorCount|
+        !endif
         !if ($EVAutoclaveCount>0)
         |   EV Autoclave      |   $EVAutoclaveCount|
+        !endif
+        !if ($IVAutoclaveCount>0)
+        |   IV Autoclave      |   $IVAutoclaveCount|
         !endif
         |   **total:** | ** $TotalMachinesCount **|
     ]
