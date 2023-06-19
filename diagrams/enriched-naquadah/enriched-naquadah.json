@@ -1,7 +1,7 @@
 [
   {
     "name": "LCR",
-    "tier": "EV",
+    "tier": "IV",
     "circuit": 0,
     "inputs": [
       {
@@ -10,17 +10,26 @@
       },
       {
         "name": "P-507",
-        "amount": "500L"
+        "amount": "500L",
+        "import": "\\nfull hatch\\nonce by hand"
       },
       {
         "name": "Sulfuric Acid",
-        "amount": "18000L"
+        "amount": "18000L",
+        "import": "main chemline"
       }
     ],
     "outputs": [
+
       {
-        "name": "Naquadax Oxide Mixture Dust",
-        "amount": "1D"
+        "name": "Naquadah Oxide Mixture Dust",
+        "amount": "1D",
+        "process": "\\nnaquadah\\nline"
+      },
+      {
+        "name": "Waste Liquid",
+        "amount": "1000L",
+        "process": "\\nnaquadah\\nline"
       },
       {
         "name": "Trinium Sulfate Dust",
@@ -29,21 +38,18 @@
       {
         "name": "Enriched-Naquadah-Rich Solution",
         "amount": "4000L"
-      },
-      {
-        "name": "Waste Liquid",
-        "amount": "1000L"
       }
     ]
   },
   {
     "name": "Autoclave",
-    "tier": "HV",
+    "tier": "IV",
     "circuit": 0,
     "inputs": [
       {
         "name": "Sodium Hydroxide",
-        "amount": "15D"
+        "amount": "15D",
+        "import": "platline"
       },
       {
         "name": "Enriched-Naquadah-Rich Solution",
@@ -104,17 +110,19 @@
     "outputs": [
       {
         "name": "Hot Enriched Naquadah Ingot",
-        "amount": "1I"
+        "amount": "1I",
+        "export": "freezeer"
       },
       {
         "name": "Zinc Sulfate Dust",
-        "amount": "12D"
+        "amount": "12D",
+        "export": "electrolyzer"
       }
     ]
   },
   {
     "name": "LCR",
-    "tier": "HV",
+    "tier": "IV",
     "circuit": 0,
     "inputs": [
       {
@@ -133,7 +141,8 @@
       },
       {
         "name": "Sulfuric Acid",
-        "amount": "1000L"
+        "amount": "1000L",
+        "void": true
       }
     ]
   }

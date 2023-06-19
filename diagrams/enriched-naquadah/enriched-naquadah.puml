@@ -2,10 +2,36 @@
 !include ../../lib/header.puml
 
 !procedure $drawConnections()
-!endprocedure
-
-'import / export / void markers
-!procedure $drawMarkers()
+   po4 ---> pi5
+   po5 --> pi6
+   po6 ..> pi2
+   po7 --> pi7
+   po3 --> pi9
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
+'   po --> pi
 !endprocedure
 
 '-----------Draw Diagram Section---------------------------------
@@ -16,6 +42,5 @@ endtitle
 
 $drawMachines("enriched-naquadah.json")
 $drawConnections()
-$drawMarkers()
 
 @enduml
