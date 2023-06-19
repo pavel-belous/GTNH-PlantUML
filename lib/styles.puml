@@ -17,9 +17,14 @@ skinparam rectangle {
     }
 </style>
 ' line styles for marking input/output
-!$fromMainStorage = "#green;line.dotted;text:green : import"
-!$backToMainStorage = "#blue;line.dotted;text:blue : export"
-!$voided = "#red;line.dotted;text:red : void"
+!$fromMainStorageStyle = "#green;line.dotted;text:green"
+!$fromMainStorage = %string($fromMainStorageStyle+" : import")
+!$backToMainStorageStyle = "#blue;line.dotted;text:blue"
+!$backToMainStorage = %string($backToMainStorageStyle+" : export")
+!$voidedStyle = "#red;line.dotted;text:red"
+!$voided = %string($voidedStyle+" : void")
+!$toProcessStyle = "#orange;line.dotted;text:orange"
+!$toProcess = %string($voidedStyle+" : process")
 left header
 <font color=black>source:</font> https://github.com/pavel-belous/GTNH-PlantUML
 endheader

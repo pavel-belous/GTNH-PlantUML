@@ -51,6 +51,38 @@
 
 '-----------Procedures-------------------------------------------
 
+'Draws input/output self-aiming lines for the sake of import/export/void/process notation
+!procedure $drawPortMarks($data, $portName)
+    !if ($data.void)
+        !$voidText = "void"
+        !if ($data.void != "true")
+            !$voidText = %string($voidText+": "+$data.void)
+        !endif
+        $portName --> $portName $voidedStyle : $voidText
+    !endif
+    !if ($data.import)
+        !$importText = "import"
+        !if ($data.import != "true")
+            !$importText = %string($importText+": "+$data.import)
+        !endif
+        $portName --> $portName $fromMainStorageStyle : $importText
+    !endif
+    !if ($data.export)
+        !$exportText = "export"
+        !if ($data.export != "true")
+            !$exportText = %string($exportText+": "+$data.export)
+        !endif
+        $portName --> $portName $backToMainStorageStyle : $exportText
+    !endif
+    !if ($data.process)
+        !$processText = "process"
+        !if ($data.process != "true")
+            !$processText = %string($processText+": "+$data.process)
+        !endif
+        $portName --> $portName $toProcessStyle : $processText
+    !endif
+!endprocedure
+
 ' Draws machines and their inputs/outputs using array from .json file.
 ' Connections are drawn by $drawConnections function.
 ' All connections are ordered and depends from their actual position in array in .json file.
@@ -199,18 +231,20 @@
                     portin " " as $portInName
                 !endif
                 $portInName --> $rectangleName: $input.name\n$input.amount
+                $drawPortMarks($input, $portInName)
             !endfor
 
-                !foreach $output in $machine.outputs
-                    !$outputNumber = $outputNumber + 1
-                    !$portOutName = %string("po"+$outputNumber)
-                    !if ($DEBUG)
-                        portout "$portOutName" as $portOutName
-                    !else
-                        portout " " as $portOutName
-                    !endif
-                    $rectangleName #----> $portOutName: $output.name\n$output.amount
-                !endfor
+            !foreach $output in $machine.outputs
+                !$outputNumber = $outputNumber + 1
+                !$portOutName = %string("po"+$outputNumber)
+                !if ($DEBUG)
+                    portout "$portOutName" as $portOutName
+                !else
+                    portout " " as $portOutName
+                !endif
+                $rectangleName #----> $portOutName: $output.name\n$output.amount
+                $drawPortMarks($output, $portOutName)
+            !endfor
           }
         !endfor
     rectangle machines [
