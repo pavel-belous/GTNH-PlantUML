@@ -1,26 +1,139 @@
 [
   {
-    "name": "Placeholder",
-    "tier": "HV",
+    "name": "LCR",
+    "tier": "EV",
     "circuit": 0,
     "inputs": [
       {
-        "name": "Input Placeholder 1",
-        "amount": "2D"
+        "name": "Enriched-Naquadah Oxide Mixture Dust",
+        "amount": "4D"
       },
       {
-        "name": "Input Placeholder 1",
-        "amount": "700L"
+        "name": "P-507",
+        "amount": "500L"
+      },
+      {
+        "name": "Sulfuric Acid",
+        "amount": "18000L"
       }
     ],
     "outputs": [
       {
-        "name": "Output Placeholder 1",
+        "name": "Naquadax Oxide Mixture Dust",
         "amount": "1D"
       },
       {
-        "name": "Output Placeholder 2",
-        "amount": "400L"
+        "name": "Trinium Sulfate Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Enriched-Naquadah-Rich Solution",
+        "amount": "4000L"
+      },
+      {
+        "name": "Waste Liquid",
+        "amount": "1000L"
+      }
+    ]
+  },
+  {
+    "name": "Autoclave",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Sodium Hydroxide",
+        "amount": "15D"
+      },
+      {
+        "name": "Enriched-Naquadah-Rich Solution",
+        "amount": "2500L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Concentrated Enriched-Naquadah Sludge Dust",
+        "amount": "2D"
+      },
+      {
+        "name": "P-507",
+        "amount": "625L"
+      }
+    ]
+  },
+  {
+    "name": "NeutronActivator",
+    "tier": "IV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Concentrated Enriched-Naquadah Sludge Dust",
+        "amount": "16D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Enriched-Naquadah Sulphate Dust",
+        "amount": "165D"
+      },
+      {
+        "name": "Sodium Sulfate Dust",
+        "amount": "140D"
+      },
+      {
+        "name": "Low Quality Naquadria Sulphate Dust",
+        "amount": "2D"
+      }
+    ]
+  },
+  {
+    "name": "EBF",
+    "tier": "IV",
+    "circuit": 0,
+    "coil": "Naquadah Alloy",
+    "inputs": [
+      {
+        "name": "Enriched-Naquadah Sulphate Dust",
+        "amount": "11D"
+      },
+      {
+        "name": "Zinc Dust",
+        "amount": "2D"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Hot Enriched Naquadah Ingot",
+        "amount": "1I"
+      },
+      {
+        "name": "Zinc Sulfate Dust",
+        "amount": "12D"
+      }
+    ]
+  },
+  {
+    "name": "LCR",
+    "tier": "HV",
+    "circuit": 0,
+    "inputs": [
+      {
+        "name": "Trinium Sulphate Dust",
+        "amount": "6D"
+      },
+      {
+        "name": "Hydrogen Gas",
+        "amount": "2000L"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Trinium Dust",
+        "amount": "1D"
+      },
+      {
+        "name": "Sulfuric Acid",
+        "amount": "1000L"
       }
     ]
   }
