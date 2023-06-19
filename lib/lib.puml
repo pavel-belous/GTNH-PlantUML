@@ -107,6 +107,7 @@
     !$MVElectroCount = 0
     !$HVElectroCount = 0
     !$EVElectroCount = 0
+    !$IVElectroCount = 0
     !$HVDTCount = 0
     !$IVDTCount = 0
     !$HVSifterCount = 0
@@ -118,6 +119,7 @@
     !$HVFluidExtractorCount = 0
     !$HVCentrifugeCount = 0
     !$EVCentrifugeCount = 0
+    !$IVCentrifugeCount = 0
     !$ZPMCentrifugeCount = 0
     !$HVChemicalBathCount = 0
     !$HVDigesterCount = 0
@@ -165,6 +167,8 @@
             !$HVElectroCount = $HVElectroCount + 1
         !elseif ($countMachineName == "EV Electrolyzer")
             !$EVElectroCount = $EVElectroCount + 1
+        !elseif ($countMachineName == "IV Electrolyzer")
+            !$IVElectroCount = $IVElectroCount + 1
         !elseif ($countMachineName == "HV DT")
             !$HVDTCount = $HVDTCount + 1
         !elseif ($countMachineName == "IV DT")
@@ -187,6 +191,8 @@
             !$HVCentrifugeCount = $HVCentrifugeCount + 1
         !elseif ($countMachineName == "EV Centrifuge")
             !$EVCentrifugeCount = $EVCentrifugeCount + 1
+        !elseif ($countMachineName == "IV Centrifuge")
+            !$IVCentrifugeCount = $IVCentrifugeCount + 1
         !elseif ($countMachineName == "ZPM Centrifuge")
             !$ZPMCentrifugeCount = $ZPMCentrifugeCount + 1
         !elseif ($countMachineName == "HV ChemicalBath")
@@ -290,6 +296,9 @@
         !if ($EVElectroCount>0)
         |   EV Electrolyzer         |   $EVElectroCount|
         !endif
+        !if ($IVElectroCount>0)
+        |   IV Electrolyzer         |   $IVElectroCount|
+        !endif
         !if ($HVDTCount>0)
         |   HV DT                   |   $HVDTCount|
         !endif
@@ -322,6 +331,9 @@
         !endif
         !if ($EVCentrifugeCount>0)
         |   EV Centrifuge      |   $EVCentrifugeCount|
+        !endif
+        !if ($IVCentrifugeCount>0)
+        |   IV Centrifuge      |   $IVCentrifugeCount|
         !endif
         !if ($ZPMCentrifugeCount>0)
         |   ZPM Centrifuge      |   $ZPMCentrifugeCount|

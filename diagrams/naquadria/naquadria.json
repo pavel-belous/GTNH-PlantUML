@@ -51,7 +51,7 @@
   },
   {
     "name": "NeutronActivator",
-    "tier": "EV",
+    "tier": "IV",
     "circuit": 0,
     "inputs": [
       {
@@ -98,7 +98,7 @@
   },
   {
     "name": "Electrolyzer",
-    "tier": "MV",
+    "tier": "IV",
     "circuit": 0,
     "inputs": [
       {
@@ -123,7 +123,7 @@
   },
   {
     "name": "LCR",
-    "tier": "EV",
+    "tier": "IV",
     "circuit": 0,
     "inputs": [
       {
@@ -177,7 +177,7 @@
   },
   {
     "name": "LCR",
-    "tier": "LV",
+    "tier": "IV",
     "circuit": 0,
     "inputs": [
       {
