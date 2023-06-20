@@ -11,6 +11,7 @@
    po1 ---> pi13
    po16 ..> pi9
    po11 -left..> pi7
+   po14 ..> pi5
 !endprocedure
 
 'import / export / void markers
