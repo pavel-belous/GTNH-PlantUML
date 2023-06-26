@@ -1,0 +1,122 @@
+@startuml
+
+left header
+<font color=black>source:</font> https://github.com/pavel-belous/GTNH-PlantUML
+endheader
+
+title
+    Gregtech New Horizons 2.3.4
+    Ore Processing
+endtitle
+
+rectangle "Ore Subnet" as subOre {
+    portin " " as piOre
+    portout "Ore" as poOre
+}
+
+rectangle "Crushed Ore Subnet" as subCrushedOre {
+    portin " " as piCrushedOre
+    portout "Crushed Ore" as poCrushedOre
+}
+
+rectangle "Dust Subnet" as subDust {
+    portin " " as piDust
+    portout "Dust" as poDust
+}
+
+rectangle "Impure Dust Subnet" as subDustImpure {
+    portin " " as piDustImpure
+    portout "Dust Impure" as poDustImpure
+}
+
+rectangle "Purified Dust Subnet" as subDustPure {
+    portin " " as piDustPure
+    portout "Dust Pure" as poDustPure
+}
+
+rectangle "Crushed Purified Subnet" as subCrushedPurified {
+    portin " " as piCrushedPurified
+    portout "Crushed Purified" as poCrushedPurified
+}
+
+rectangle "Crushed Centrifuged Subnet" as subCrushedCentrifuged {
+    portin " " as piCrushedCentrifuged
+    portout "Crushed Centrifuged" as poCrushedCentrifuged
+}
+
+rectangle "Main Network" as subMainNet {
+    portin " " as piMainNet
+}
+
+rectangle "MB Miner" as minerMB {
+    portout "Crushed Ore" as poMinerMBCrushedOre
+    portout "Impure Dust" as poMinerMBImpureDust
+    portout "Dust" as poMinerMBDust
+}
+
+rectangle "Void Miner" as minerVoid {
+    portout "Ore" as poMinerVoidOre
+}
+
+rectangle "Macerator" as Macerator {
+    portin " " as piMacerator
+    portout "Dust Impure" as poMaceratorDustImpure
+    portout "Dust Pure" as poMaceratorDustPure
+    portout "Dust" as poMaceratorDust
+}
+rectangle "Chemical Bath" as ChemicalBath {
+    portin " " as piChemicalBath
+    portout "Dust" as poChemicalBathDust
+    portout "Crushed Purified" as poChemicalBathCrushedPurified
+}
+rectangle "Thermal Centrifuge" as ThermalCentrifuge {
+    portin " " as piThermalCentrifuge
+    portout "Crushed Centrifuged" as poThermalCentrifugeCrushedCentrifuged
+    portout "Dust" as poThermalCentrifugeDust
+}
+rectangle "Ore Washing Plant" as OreWashingPlant {
+    portin " " as piOreWashingPlant
+    portout "CrushedPurified" as poOreWashingPlantCrushedPurified
+    portout "Dust" as poOreWashingPlantDust
+}
+rectangle "Centrifuge" as Centrifuge {
+    portin " " as piCentrifuge
+    portout "Dust" as poCentrifugeDust
+}
+
+
+poMinerVoidOre --> piOre
+poMinerMBCrushedOre --> piCrushedOre
+poMinerMBDust --> piDust
+poMinerMBImpureDust --> piDustImpure
+poDust --> piMainNet : interface\n+\nstorage bus
+poCrushedOre --> piMacerator
+poCrushedOre --> piChemicalBath
+poCrushedOre --> piThermalCentrifuge
+poCrushedOre --> piOreWashingPlant
+
+poChemicalBathDust --> piDust
+poChemicalBathCrushedPurified --> piCrushedPurified
+
+poThermalCentrifugeCrushedCentrifuged --> piCrushedCentrifuged
+poThermalCentrifugeDust --> piDust
+
+poCrushedPurified --> piThermalCentrifuge
+poCrushedPurified --> piMacerator
+
+
+poMaceratorDust --> piDust
+poMaceratorDustImpure --> piDustImpure
+poMaceratorDustPure --> piDustPure
+
+poCentrifugeDust --> piDust
+poDustPure --> piCentrifuge
+poDustImpure --> piCentrifuge
+
+poOre --> piMacerator
+poCrushedCentrifuged --> piMacerator
+
+poOreWashingPlantCrushedPurified --> piCrushedPurified
+poOreWashingPlantDust --> piDust
+
+@enduml
